@@ -1,0 +1,74 @@
+{
+  "id": "MAP_DESOLATE_CHECKPOINT",
+  "name": "DesolateCheckpoint",
+  "layout": "LAYOUT_DESOLATE_CHECKPOINT",
+  "music": "MUS_DESERT",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SANDSTORM",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DESOLATE_OUTSKIRTS",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 18,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CheckpointAssistant",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ENTRY_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_INDOOR_CHECKPOINT",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FC",
+      "var_value": "0",
+      "script": "DesolateCheckpoint_BlockPath"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DesolateCheckpoint_CheckpointSign"
+    }
+  ]
+}

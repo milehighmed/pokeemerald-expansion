@@ -1362,6 +1362,7 @@ static const struct LevelUpMove sTentacruelLevelUpLearnset[] = {
 static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 4, MOVE_MUD_SPORT),
     LEVEL_UP_MOVE( 6, MOVE_ROCK_POLISH),
     LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
@@ -5530,8 +5531,11 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSeedotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIDE),
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 3, MOVE_HARDEN),
     LEVEL_UP_MOVE( 9, MOVE_GROWTH),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(15, MOVE_NATURE_POWER),
     LEVEL_UP_MOVE(21, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(27, MOVE_SUNNY_DAY),
@@ -13504,6 +13508,7 @@ static const struct LevelUpMove sDiggersbyLevelUpLearnset[] = {
 static const struct LevelUpMove sFletchlingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_PECK),
     LEVEL_UP_MOVE(13, MOVE_AGILITY),

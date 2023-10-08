@@ -1,0 +1,10 @@
+mapscripts DunetownShack_MapScripts {}
+
+script ShackMan {
+    lockall
+    faceplayer
+    message(format("The ONE time I finally managed to \p get a girl to come over, she\p said that the way I positioned \p my bed has cursed energy.\p ... \p ...\p ...\p WHAT DOES THAT EVEN MEAN??"))
+    waitmessage
+    releaseall
+    end
+}

@@ -1,0 +1,36 @@
+mapscripts DesolateCheckpoint_MapScripts {}
+script DesolateCheckpoint_CheckpointSign {
+    lockall
+    msgbox(format("Nova City Entry Checkpoint:\p Starter Assignments and PassIDs\p"))
+    releaseall
+}
+
+script CheckpointAssistant {
+    lockall
+    faceplayer
+    msgbox(format("Welcome to Nova City. Head inside to receive a Pokémon and continue to that cave entrance for your PassID examination."))
+    releaseall
+    end
+}
+
+script DesolateCheckpoint_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_ADVENTURE_STARTED, Checkpoint_Stop )
+    msgbox(format("STOP! You don't have a Pokémon yet! You need one in order to get your PassID. Head inside and get one."))
+    applymovement(OBJ_EVENT_ID_PLAYER, Checkpoint_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script Checkpoint_Stop {
+    msgbox(format("Follow this path to the cave, inside you'll be tested by the Registrar!"))
+    waitmessage
+    releaseall
+    end
+}
+
+movement Checkpoint_GoBack {
+    walk_left
+}

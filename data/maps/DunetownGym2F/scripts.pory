@@ -1,0 +1,8 @@
+mapscripts DunetownGym2F_MapScripts {}
+
+script GymResearcher2F {
+    lockall
+    trainerbattle_single (TRAINER_MARK, "Will you help me with\n an experiment?", "A startling discovery!")
+    releaseall
+    end
+}

@@ -1,0 +1,32 @@
+mapscripts Route10_MapScripts {}
+
+script Route10Item {
+	lockall
+	giveitem (ITEM_POTION,1)
+            removeobject(3)
+            setflag(FLAG_UNUSED_0x299)
+	waitmessage
+releaseall
+end		
+
+}
+
+script Route10BattleLassShannon {
+	trainerbattle_single(TRAINER_SHANNON, "Hey! Congrats on getting your PassID.\p I passed too, let's celebrate!", "Such natural talent!")
+	waitmessage
+	end
+
+}
+
+script Route10BattleSchoolKidJerry {
+	trainerbattle_single(TRAINER_JERRY_1, "I live in the Dunetown district!\p My brother's working for the \p Leader for his school project!", "My brother's out here with me! \p You won't beat him!")
+	waitmessage
+	end
+
+}
+
+script Route10BattleYoungsterCalvin {
+	trainerbattle_single(TRAINER_CALVIN_1, "I'm a student researcher for Leader Mikey!\p I'm gathering data on the strange \p winds in this area!", "Ugh, looks like my brother and I\p will have to head back early now.")
+	waitmessage
+	end
+}

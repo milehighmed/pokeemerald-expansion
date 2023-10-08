@@ -1,0 +1,25 @@
+mapscripts Route11_MapScripts {}
+
+script Route11Item {
+	lockall
+	giveitem (ITEM_POKE_BALL,1)
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x49A)
+	waitmessage
+releaseall
+end		
+
+}
+
+script Route11BattleHikerSawyer {
+	trainerbattle_single(TRAINER_SAWYER_1, "The winds in the desert are broken up\p By Nova City's natural outer rock walls!", "You're a force of nature!")
+	waitmessage
+	end
+
+}
+
+script Route11BattleBattleGirlJocelyn {
+    trainerbattle_single(TRAINER_JOCELYN, "I come here to to train and get \pa break from the sand in \pDunetown!", "Looks like I should've gone \pelsewhere..")
+    waitmessage
+    end
+}

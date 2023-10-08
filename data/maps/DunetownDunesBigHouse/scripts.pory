@@ -1,0 +1,25 @@
+mapscripts DunetownDunesBigHouse_MapScripts {}
+
+script DunetownBigHouse_Pikachu{
+    lockall
+    faceplayer
+    msgbox(format("Pika! Pika-pi!"))
+    releaseall
+    end
+}
+
+script DunetownBigHouse_Woman{
+    lockall
+    faceplayer
+    msgbox(format("I live here with my Pikachu! I used to work in Silver City and we would battle frequently. Not anymore though! Are you on a journey of your own? If you find any of my old Trainer supplies you can have them."))
+    releaseall
+    end
+}
+
+script DunetownBigHouse_Item{
+    lockall
+    giveitem(ITEM_THUNDER_STONE,1)
+    setflag (FLAG_UNUSED_0x4AB)
+    releaseall
+    end
+}

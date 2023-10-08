@@ -1,0 +1,23 @@
+mapscripts DunetownGym_MapScripts {}
+
+script GymYoungster1{
+    lockall
+    trainerbattlesingle(TRAINER_JOSH, "You have to get through the students first!", "I still have a lot to learn...")
+    releaseall
+    end
+}
+
+script GymYoungster2{
+    lockall
+    trainerbattlesingle(TRAINER_TOMMY, "Are you grounded enough for this?", "Six feet under!")
+    releaseall
+    end
+}
+
+script GymElder{
+    lockall
+    trainerbattlesingle(TRAINER, "I've studied the sands my\n whole life!", "So much that I still don't\n know...")
+    releaseall
+    end
+}
+

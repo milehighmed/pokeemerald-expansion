@@ -1,0 +1,15 @@
+mapscripts DesolateOutskirts_MapScripts {}
+
+script TruckGuy {
+	lockall
+	applymovement (2, TruckGuy_Exposition)
+	msgbox(format("This is as far as I can take you without my truck getting stuck in the sand! You oughta head East into town as fast as you can manage it! This Sandstorm is no joke! Good luck, and welcome to Nova City!"))
+	setflag (FLAG_UNUSED_0x4A7)
+	waitmessage
+	releaseall
+	end
+}
+
+movement TruckGuy_Exposition {
+	face_player
+}

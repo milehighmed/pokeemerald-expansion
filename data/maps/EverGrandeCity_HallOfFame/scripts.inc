@@ -51,7 +51,7 @@ EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame::
 	end
 
 EverGrandeCity_HallOfFame_EventScript_GameClearMale::
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+	setrespawn HEAL_LOCATION_DESOLATE_CHECKPOINT
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
 	waitstate
@@ -59,7 +59,7 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale::
 	end
 
 EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
+	setrespawn HEAL_LOCATION_DESOLATE_CHECKPOINT
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
 	waitstate
@@ -96,4 +96,3 @@ EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
 	.string "name as a TRAINER who triumphed over\l"
 	.string "the POKéMON LEAGUE, and the names of\l"
 	.string "the partners who battled with you.$"
-

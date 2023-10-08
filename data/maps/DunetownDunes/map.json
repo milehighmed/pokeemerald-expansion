@@ -1,0 +1,139 @@
+{
+  "id": "MAP_DUNETOWN_DUNES",
+  "name": "DunetownDunes",
+  "layout": "LAYOUT_DUNETOWN_DUNES",
+  "music": "MUS_DESERT",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DUNETOWN",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "x": 15,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DunesWoman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "x": 1,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 7,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DunesTriathlete",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 10,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DunesElder",
+      "flag": "FLAG_UNUSED_0x032"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIG_SNORLAX_DOLL",
+      "x": 25,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIG_SNORLAX_DOLL",
+      "x": 32,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_GYM",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_TUNNEL",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 18,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_DUNES_SMALL_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_DUNES_BIG_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_DUNES",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_DUNETOWN_DUNES",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

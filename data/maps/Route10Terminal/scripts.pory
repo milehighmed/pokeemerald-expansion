@@ -1,0 +1,19 @@
+mapscripts Route10Terminal_MapScripts {}
+
+script Terminal10_Camper {
+    lockall
+    msgbox(format("My friend got approved by Leader Mikey to travel to Watt Junction by battling him, and he told me that he used a rare pokemon that he found in a cave outside of town to do it! So here I am searching..."))
+    waitmessage
+    releaseall
+    end
+}
+
+script Terminal10_Item {
+    lockall
+    giveitem(ITEM_QUICK_CLAW, 1)
+        removeobject (2)
+        setflag (FLAG_UNUSED_0x4AA)
+    waitmessage
+    releaseall
+    end
+}

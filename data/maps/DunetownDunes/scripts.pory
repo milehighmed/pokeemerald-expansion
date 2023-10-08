@@ -1,0 +1,25 @@
+mapscripts DunetownDunes_MapScripts{}
+
+script DunesElder{
+    lockall
+    faceplayer    
+    msgbox(format("Leader Mikey is in the Desolate Desert collecting data on the Sandstorm that's raging at this very moment! He'll be back soon, be patient."))
+    releaseall
+    end
+}
+
+script DunesTriathlete{
+    lockall
+    faceplayer
+    msgbox(format("I'm training to run from here, around Lake Loral, and back again! And you better believe I'm stopping in Lush Valley to try their world-famous Gogoat cheese and Combee Honey!"))
+    releaseall
+    end
+}
+
+script DunesWoman {
+    lockall
+    faceplayer
+    msgbox(format("Dunetown is the most isolated of Nova City's districts, and its also where a lot of newcomers enter from. Leader Mikey is pretty good about granting travel access, and depending on which direction you go you could end up at Lake Loral, Watt Junction, or The Bricks."))
+    releaseall
+    end
+}

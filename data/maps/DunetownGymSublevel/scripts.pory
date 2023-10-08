@@ -1,0 +1,8 @@
+mapscripts DunetownGymSublevel_MapScripts {}
+
+script GymResearcherSublevel {
+    lockall
+    trainerbattle_single (TRAINER_STEVE_2, "My research must continue!", "This data is invaluable,\n thank you.")
+    releaseall
+    end
+}

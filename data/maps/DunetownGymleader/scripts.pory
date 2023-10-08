@@ -1,0 +1,33 @@
+mapscripts DunetownGymleader_MapScripts {}
+
+script Leader_Mikey{
+    lockall
+    if (var(VAR_UNUSED_0x4083) == 2) {
+    goto (Leader_MikeyBattle)}
+else {
+    msgbox(format("We're all rooting for you here in Dunetown!"))
+}
+}
+
+script Leader_MikeyBattle{
+    lockall
+    faceplayer
+    msgbox(format("Your timing is impeccable! I'm just about to leave for another foray into the Desolate Desert. We're so close to solving the mystery of Nova City's natural outer walls. Why do weather patterns act the way they do in these areas? Why are the changing seasons seen in other regions altered here? How is it possible for so many biomes to be present in a relatively small region? These are all questions that I've sought to answer ever since I became Dunetown's Leader years ago. I could really use your help, you know. If you can beat me, I'll approve for you to leave Dunetown. Otherwise, you'll join me and my team as we strike back out into the wastes!"))
+    trainerbattle_single(TRAINER_MIKEY1, "Why would you want to leave\n Dunetown?", "Your potential is wasted\n here, good luck on your\p journey.", Dunetown_Victory)
+    releaseall
+    end
+}
+
+script Dunetown_Victory {
+    lockall
+    setflag(FLAG_BADGE01_GET)
+    msgbox(format("Here, you've earned these."))
+    waitmessage
+    giveitem (ITEM_TM37, 1)
+    waitfanfare
+    msgbox(format("You got the Oasis Badge! Pokemon up to Level 18 will obey you."))
+    call (Common_EventScript_PlayGymBadgeFanfare)
+    setvar(VAR_UNUSED_0x4083,3)
+    releaseall
+    end
+}

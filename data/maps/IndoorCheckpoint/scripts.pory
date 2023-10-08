@@ -1,0 +1,121 @@
+mapscripts IndoorCheckpoint_MapScripts {}
+script IndoorCheckpoint_Registrar {
+	lockall
+    msgbox(format("Welcome, I'm a PassID registrar.\p What's that?? You don't know what a PassID is?\n Okay! I'll explain.\p In other regions, where travel in between towns and cities is unrestricted, citizens carry Trainer IDs that serve as identification in addition to records of the Gym Badges they've collected over the course of their journey. In Nova City, it's up to each district's Leader to approve individual citizens for travel from district to district. Badges serve as as proof of approval, and also allow for the ownership of stronger Pokémon. Over there, you'll find some Pokémon to choose from that are available to you as a new resident to Nova City.\p Remember! If your Pokémon become too powerful for your current licensure, you may find that you've lost control of them. Authorities will also take notice if you use Pokémon unfit for your licensure. Good luck!"))
+    setflag(FLAG_SYS_POKEDEX_GET)
+    setflag(FLAG_SYS_NATIONAL_DEX)
+    setflag(FLAG_ADVENTURE_STARTED)
+    setflag (FLAG_SYS_B_DASH)
+    setrespawn (HEAL_LOCATION_DESOLATE_CHECKPOINT)
+    releaseall
+    }
+script Registrar_EventScript_Starter1 {
+    lockall
+    if(!(flag(FLAG_UNUSED_0x493))){
+    showmonpic(SPECIES_SEEDOT, 10, 3)
+    msgbox("Do you want to choose Seedot?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_SEEDOT, 5, ITEM_NONE)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Seedot!")
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x493)
+            setflag(FLAG_SYS_POKEMON_GET)
+
+            call(NicknamePartyMon)
+    }
+    
+}
+else{
+    hidemonpic
+    msgbox("Let's look around some more.")
+}
+}
+    else{
+        msgbox("Don't be greedy!")
+    }
+waitmessage
+releaseall
+end
+}
+
+script NicknamePartyMon{
+    msgbox("Give It a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+            call(Common_EventScript_GetGiftMonPartySlot)
+            call(Common_EventScript_NameReceivedPartyMon)
+    }
+    }
+
+script NicknameBoxMon{
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+            call(Common_EventScript_NameReceivedBoxMon)
+            call(Common_EventScript_TransferredToPC)}
+        msgbox("Transferred to PC")
+}
+
+script Registrar_EventScript_Starter2 {
+    lockall
+    if(!(flag(FLAG_UNUSED_0x493))){
+    showmonpic(SPECIES_FLETCHLING, 10, 3)
+    msgbox("Do you want to choose Fletchling?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_FLETCHLING, 5, ITEM_NONE)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Fletchling!")
+            removeobject(2)
+            setflag(FLAG_UNUSED_0x493)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknamePartyMon)
+    }
+}
+else{
+    hidemonpic
+    msgbox("Let's look around some more.")
+    
+}
+}
+    else{
+        msgbox("Don't be greedy!")
+    }
+waitmessage
+releaseall
+end
+}
+
+
+script Registrar_EventScript_Starter3 {
+    lockall
+    if(!(flag(FLAG_UNUSED_0x493))){
+    showmonpic(SPECIES_GEODUDE, 10, 3)
+    msgbox("Do you want to choose Geodude?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_GEODUDE, 5, ITEM_NONE)
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Geodude!")
+            removeobject(4)
+            setflag(FLAG_UNUSED_0x493)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknamePartyMon)
+    }
+}
+else{
+    hidemonpic
+    msgbox("Let's look around some more.")
+}
+}
+    else{
+        msgbox("Don't be greedy!")
+    }
+waitmessage
+releaseall
+end
+}
+
+

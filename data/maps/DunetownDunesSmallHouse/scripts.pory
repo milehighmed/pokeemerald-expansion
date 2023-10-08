@@ -1,0 +1,17 @@
+mapscripts DunetownDunesSmallHouse_MapScripts {}
+
+script SmallHouse_Azurill{
+    lockall
+    faceplayer
+    msgbox(format("Zu! 'Zurill!"))
+    releaseall
+    end
+}
+
+script SmallHouse_Lass{
+    lockall
+    faceplayer
+    msgbox(format("My Dad gave me this Azurill so that I wouldn't get lonely when I moved to Nova City, but I had no idea I'd be living in a desert! What will I do if it evolves??"))
+    releaseall
+    end
+}

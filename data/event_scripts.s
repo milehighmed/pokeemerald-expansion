@@ -1059,3 +1059,55 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/DesolateOutskirts/scripts.inc"
+
+	.include "data/maps/DesolateCheckpoint/scripts.inc"
+
+	.include "data/maps/EntryCave/scripts.inc"
+
+	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/IndoorCheckpoint/scripts.inc"
+
+	.include "data/maps/Route10Terminal/scripts.inc"
+
+	.include "data/maps/Dunetown/scripts.inc"
+
+	.include "data/maps/DunetownDunes/scripts.inc"
+
+	.include "data/maps/BikeShopInterior/scripts.inc"
+
+	.include "data/maps/DunetownPokecenter/scripts.inc"
+
+	.include "data/maps/DunetownMart/scripts.inc"
+
+	.include "data/maps/DunetownShack/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/ShadowyCave/scripts.inc"
+
+	.include "data/maps/DunetownRoad/scripts.inc"
+
+	.include "data/maps/DunetownGym/scripts.inc"
+
+	.include "data/maps/DunetownGymleader/scripts.inc"
+
+	.include "data/maps/DunetownGym2F/scripts.inc"
+
+	.include "data/maps/DunetownGymBasement/scripts.inc"
+
+	.include "data/maps/DunetownGymSublevel/scripts.inc"
+
+	.include "data/maps/DunetownGym3F/scripts.inc"
+
+	.include "data/maps/DunetownDunesSmallHouse/scripts.inc"
+
+	.include "data/maps/DunetownDunesBigHouse/scripts.inc"
+
+	.include "data/maps/DunetownTunnel/scripts.inc"
+
+	.include "data/maps/Route12/scripts.inc"
+
+	.include "data/maps/Route13/scripts.inc"

@@ -1,0 +1,78 @@
+mapscripts EntryCave_MapScripts {}
+
+script EntryCaveItem {
+	lockall
+	giveitem (ITEM_POKE_BALL,1)
+            removeobject(2)
+            setflag(FLAG_UNUSED_0x298)
+	waitmessage
+releaseall
+end		
+}
+
+script EntryCaveBattleRegistrar {
+	trainerbattle_single(TRAINER_WALTER_1, "I'm the Registrar for this sector.\p If you want to enter Nova City,\p you'll first have to go through\p me!", "Well done, you've earned your PassID.")
+	waitmessage
+	end
+
+}
+
+script EntryCaveYoungster {
+	trainerbattle_single(TRAINER_BILLY, "Are you here to get your PassID too?", "I thought you'd be a good warm-up \p but you flattened me!")
+	waitmessage
+	end
+}
+
+script EntryCaveBattleNurse {
+	trainerbattle_single(TRAINER_DAISY, "I'm a traveling nurse, \p I'm trying to come to Nova City\p for work. If you can beat me, \p I'll heal your Pokémon!", "A deal's a deal!")
+	msgbox("Would you like me to heal your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+		playfanfare(MUS_HEAL)
+        msgbox("I'll be here if you need me!")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("Have a nice day", MSGBOX_NPC)
+    }
+}
+
+script Sponsor_Intro {
+    lockall
+    faceplayer
+    msgbox(format("Who me? Well, depending on how well you do here, I'll be your sponsor! It'll be like I'm always one step ahead of you, because I am! I'll be at all your Gym appearances, cheering you on! But listen... there's a lot riding on this, so do great things, okay?"))
+    waitmessage
+    releaseall
+    end
+}
+
+script EntryCave_LeagueSponsor {
+   goto_if_set (FLAG_UNUSED_0x4A7, Entry_Intro )
+}
+
+script Entry_Intro{
+    lockall
+    applymovement (1, Entry_Right )
+    faceplayer
+    msgbox(format("Hey there! I can tell just by looking at you that you're not from around these parts. Nevermind that there would be no reason for you to be here if you weren't a newcomer... \p ... \p ... \p Anyways! Welcome. This cave serves as the exam grounds for you to obtain your PassID, which will allow you entry into the Dunetown district that lies just beyond here! You came at a great time, there are only two other candidates here currently. You'll find the Registrar at the very opposite end of the cave. Here, you look parched. Good luck and see you around!"))
+    giveitem (ITEM_FRESH_WATER, 1)
+    applymovement (1, Entry_Left)
+    clearflag (FLAG_UNUSED_0x4A7)
+    setvar (VAR_UNUSED_0x404E, 1)
+    waitmessage
+    releaseall
+    end
+}
+
+movement Entry_Right{
+    walk_right
+    face_down
+}
+
+movement Entry_Left {
+    walk_left
+    face_right
+}

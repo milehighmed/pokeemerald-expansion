@@ -1,0 +1,122 @@
+mapscripts BikeShopInterior_MapScripts {}
+
+script Prep_BikeShop {
+if (var(VAR_UNUSED_0x4083) == 1) {
+end}
+else {
+    setflag (FLAG_UNUSED_0x4A8)
+    goto (BikeShopOwner)
+}
+}
+
+script PartsRetrieved{
+    if (var(VAR_UNUSED_0x4083) != 2) {
+end}
+if (var(VAR_UNUSED_0x4083) == 2) {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Face_BikeOwner)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You did it! You got my parts back! Like I said, I owe you big time. I'm working on a new bicycle design, once my terminal is repaired you'll be able to get here from any Interface Terminal in Nova City! By the time you get access to the Digital Underworld, my new prototype bicycle should be ready. Come back then and its yours!"))
+    waitmessage
+    setflag(FLAG_UNUSED_0x032)
+    setvar(VAR_UNUSED_0x4083, 3)
+    releaseall
+    end
+}
+
+}   
+
+script BikeShopOwner {
+    lockall
+    faceplayer
+    goto_if_set (FLAG_UNUSED_0x4A8, Bikeshop_SNS)
+    msgbox(format("Welcome!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script Bikeshop_SNS{
+applymovement(OBJ_EVENT_ID_PLAYER, Face_BikeOwner)
+applymovement (2, PinkSNSGrunt_BikeShop)
+msgbox(PinkBikeLine1)
+applymovement (3, GreenSNSGrunt_BikeShop)
+msgbox(GreenBikeLine1)
+waitmessage
+applymovement (3, PinkSNSGrunt_BikeShop)
+playfanfare (MUS_OBTAIN_ITEM)
+msgbox(format("The stranger opens a panel on the strange machine and removes the electronics inside!"))
+applymovement (3, GreenSNSGrunt_LeaveShop)
+waitmovement(3)
+msgbox(PinkBikeLine2)
+applymovement (2, PinkSNSGrunt_LeaveShop)
+waitmovement(2)
+removeobject (2)
+removeobject (3)
+setflag(FLAG_UNUSED_0x4A9)
+applymovement (OBJ_EVENT_ID_PLAYER, Approach_BikeOwner)
+waitmovement (OBJ_EVENT_ID_PLAYER)
+msgbox(format("Oh no! They stole my Interface Terminal components! I needed those to finish setting up my Terminal! Without that, I won't be able to support customers from outside of Dunetown! I'll go out of business... \p ... \p ... \p I know! You can help me! The Police in Nova City are horrible extortionists, and trying to get anything done through them would cost me the last of my savings... but if we can keep this business between you and me, I'll make it worth your while! Now... where could they have headed off to?"))
+clearflag (FLAG_UNUSED_0x4A8)
+setvar(VAR_UNUSED_0x4083, 1)
+waitmessage
+releaseall
+end
+}
+
+text PinkBikeLine1 {
+"{COLOR RED}{SHADOW LIGHT_RED}Hey, Gramps!\n 
+This is what you might call,\p
+if this were like an old-timey\n
+movie or whatnot, a stick-up!"
+}
+
+text GreenBikeLine1 {
+"{COLOR GREEN}{SHADOW LIGHT_GREEN}Yeah! And hey, Trainer! Don't\n
+even think about trying to do anything.\p
+Unless you wanna get VAPORIZED,\n 
+by our super-powerful Pokémon.\p
+...\n
+Not that you'd have enough time \p
+to stop us anyways, we've got what\n
+we need."
+}
+
+text PinkBikeLine2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Thanks a lot!"
+}
+movement Face_BikeOwner {
+    face_up
+}
+movement Approach_BikeOwner{
+    walk_up
+}
+
+movement PinkSNSGrunt_BikeShop {
+    walk_in_place_up
+    
+}   
+
+movement GreenSNSGrunt_BikeShop {
+    walk_right * 3
+    face_up
+}
+
+movement PinkSNSGrunt_LeaveShop{
+   face_down
+   face_right
+   walk_right *2
+   face_down
+   walk_down *5
+   walk_in_place_down
+}
+
+movement GreenSNSGrunt_LeaveShop{
+    face_left
+    walk_left *2
+    face_down
+    walk_down *5
+    walk_in_place_down
+    
+}
+

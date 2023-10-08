@@ -1,0 +1,76 @@
+mapscripts Dunetown_MapScripts {}
+script Dunetown_EntrySign {
+    lockall
+    msgbox(format("Dunetown:\p The Winds of Change are Always Blowing!\p"))
+    releaseall
+} 
+
+script Dunetown_Market_Sign {
+    lockall
+    msgbox(format("Dunetown Outdoor Market"))
+    releaseall
+}
+
+script Dunetown_RunningBoy {
+    lockall
+    faceplayer
+    msgbox(format("I love running in the sand\n with my sister!"))
+    waitmessage
+    release
+    end
+}
+
+script Dunetown_RunningGirl {
+    lockall
+    faceplayer
+    msgbox(format("I hate running! \n But it makes my brother happy!"))
+    waitmessage
+    release
+}
+
+script Dunetown_Market_BerryVendor {
+    lock
+    faceplayer
+    message("Want to buy some berries?")
+    waitmessage
+    pokemart(Market_BerryVendor)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+script Dunetown_Market_TMVendor{
+    lock
+    faceplayer
+    message("Want to buy some TMs?")
+    waitmessage
+    pokemart(Market_TMVendor)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+raw`
+
+.align 2
+Market_BerryVendor::
+    .2byte ITEM_ORAN_BERRY
+    .2byte ITEM_PECHA_BERRY
+    .2byte ITEM_LEPPA_BERRY
+    .2byte ITEM_CHERI_BERRY
+    .2byte ITEM_RAZZ_BERRY
+    .2byte ITEM_RAWST_BERRY
+    .2byte ITEM_NONE
+    release
+    end
+
+.align 2
+Market_TMVendor::
+    .2byte ITEM_TM02
+    .2byte ITEM_TM04
+    .2byte ITEM_TM06
+    .2byte ITEM_TM08
+    .2byte ITEM_TM27
+    .2byte ITEM_NONE
+    release
+    end

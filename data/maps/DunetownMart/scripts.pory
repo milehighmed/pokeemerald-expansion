@@ -1,0 +1,24 @@
+mapscripts DunetownMart_MapScripts {}
+
+script Dunetown_Mart_Employee{
+    lock
+    faceplayer
+    message("What can I get for you?")
+    waitmessage
+    pokemart(Dunetown_Mart)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+raw`
+
+.align 2
+Dunetown_Mart::
+    .2byte ITEM_POTION
+    .2byte ITEM_ANTIDOTE
+    .2byte ITEM_PARALYZE_HEAL
+    .2byte ITEM_POKE_BALL
+    .2byte ITEM_NONE
+    release
+    end

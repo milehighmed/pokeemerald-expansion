@@ -1,0 +1,159 @@
+mapscripts ShadowyCave_MapScripts {}
+
+script ShadowCaveSNSGrunt1 {
+    lockall
+    msgbox(format("It cost us the last of our budget to buy this Interface TM, how are we going to get a terminal for this spot now? The Lieutenant won't want to make this spot a new base if it doesn't at least have an Interface Terminal!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script ShadowCaveSNSGrunt2 {
+    lockall
+    msgbox(format("Stop talking so loud! The last thing we need is some passing trainer hearing us and telling Leader Mikey. Or WORSE... stealing our idea!!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script Prep_ShadowyCave {
+if (var(VAR_UNUSED_0x4083) != 1) {
+end}
+if (var(VAR_UNUSED_0x4083) == 1) {
+     goto (ShadowyCaveBattle)}
+}
+
+script ShadowyCaveBattle{
+lockall
+applymovement(OBJ_EVENT_ID_PLAYER,Face_BikeOwner)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+msgbox(PinkSNSGrunt_ShadowyCave1)
+waitmessage
+msgbox(GreenSNSGrunt_ShadowyCave1)
+waitmessage
+applymovement(1, PinkSNSGrunt_NoticePlayer)
+msgbox(PinkSNSGrunt_ShadowyCave2)
+applymovement(1, PinkSNSGrunt_ShadowyCaveAttack)
+trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, "Feel the might of the Shadow\n Net Syndicate!",
+ "No! How...", ShadowyCaveBattle2)
+}
+script ShadowyCaveBattle2{
+msgbox(GreenSNSGrunt_ShadowyCave2, MSGBOX_AUTOCLOSE) 
+waitmessage
+applymovement(1,PinkSNSGruntBacksUp)
+waitmovement(1)
+applymovement (2, GreenSNSGruntAttacks)
+waitmovement(2)
+trainerbattle_single(TRAINER_KATELYNN, "I'll just take YOUR Pokémon!", "Please dont take my Purrloin!", 
+ShadowyCaveBattle3)
+}
+script ShadowyCaveBattle3 {
+msgbox(PinkSNSGrunt_ShadowyCave3)
+waitmessage
+applymovement (OBJ_EVENT_ID_PLAYER, PlayerBacksUp)
+waitmovement (OBJ_EVENT_ID_PLAYER)
+applymovement (2,GreenRunAway)
+waitmovement (2)
+applymovement (1, PinkRunAway)
+waitmovement (1)
+removeobject (1)
+removeobject (2)
+msgbox(format("You retrieved the Interface Terminal Components!"))
+playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+setflag (FLAG_UNUSED_0x030)
+setvar(VAR_UNUSED_0x4083, 2)
+releaseall
+end
+}
+movement PinkRunAway{
+    walk_fast_down * 8
+}
+movement GreenRunAway{
+    walk_fast_down * 7
+}
+movement PinkSNSGruntBacksUp{
+    face_up
+    walk_up
+    face_down
+}
+movement GreenSNSGruntAttacks{
+    face_down
+    walk_down
+    face_left
+    walk_left
+    face_down
+}
+movement PlayerBacksUp{
+    walk_left
+    face_right
+}
+
+movement PinkSNSGrunt_NoticePlayer{
+    face_down
+    walk_in_place_down
+}
+
+movement PinkSNSGrunt_ShadowyCaveAttack{
+    walk_down
+}
+
+text PostBattle_PinkCave {
+    "{COLOR RED}{SHADOW LIGHT_RED}
+    Grr..."
+}
+text PinkSNSGrunt_ShadowyCave1{
+    "{COLOR RED}{SHADOW LIGHT_RED}You idiot!\n 
+This Pokémon you stole can't\p
+even learn Interface!\n
+Those parts we got from\p
+the Bike Shop are useless!"
+}
+
+text GreenSNSGrunt_ShadowyCave1{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}
+How is that my fault?? You're the\n
+the planner! You pointed it out\p
+to me to steal!\n 
+Whatever. It's not the end of the\p
+world. We can go to Watt Junction\n
+and just get a Pokémon that CAN\p
+learn interface."
+}
+
+text PinkSNSGrunt_ShadowyCave2{
+    "{COLOR RED}{SHADOW LIGHT_RED}
+Hey!You're from the Bike Shop!\n 
+What're YOU doing here?\p
+It doesn't matter.\n
+I won't let you interfere!"
+}
+
+text GreenSNSGrunt_ShadowyCave2{
+"{COLOR GREEN}{SHADOW LIGHT_GREEN}
+Fine! Leave it to me to do\n
+all the dirty work, again!"
+}
+
+text PinkSNSGrunt_ShadowyCave3 {
+"{COLOR RED}{SHADOW LIGHT_RED}
+Let's get out of here!"
+}
+
+script PichuBattle{
+	lockall
+	faceplayer
+	playmoncry(SPECIES_PICHU, CRY_MODE_ENCOUNTER)
+	msgbox(format("Pi! Pichu!"))
+    delay (40)
+	waitmoncry
+    setwildbattle(SPECIES_PICHU, 10, ITEM_LIGHT_BALL)
+    dowildbattle
+    fadescreen(FADE_TO_BLACK)
+	removeobject(3)
+    setflag (FLAG_UNUSED_0x031)
+	fadescreen(FADE_FROM_BLACK)
+    waitmessage
+	releaseall
+	end
+}
+

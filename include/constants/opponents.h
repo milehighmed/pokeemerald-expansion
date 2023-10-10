@@ -83,7 +83,7 @@
 #define TRAINER_EDGAR                        79
 #define TRAINER_ALBERT                       80
 #define TRAINER_SAMUEL                       81
-#define TRAINER_MIKEY                        82
+#define TRAINER_VITO                         82
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84
 #define TRAINER_WILTON_3                     85
@@ -856,6 +856,7 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+//#define TRAINER_MIKEY                       855
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

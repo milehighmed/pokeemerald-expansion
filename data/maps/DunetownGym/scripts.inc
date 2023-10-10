@@ -4,27 +4,27 @@ DunetownGym_MapScripts::
 
 GymYoungster1::
 	lockall
-	trainerbattlesingle TRAINER_JOSH, GymYoungster1_Text_0, GymYoungster1_Text_1
+	trainerbattle_single TRAINER_JOSH, GymYoungster1_Text_0, GymYoungster1_Text_1
 	releaseall
 	end
 
 
 GymYoungster2::
 	lockall
-	trainerbattlesingle TRAINER_TOMMY, GymYoungster2_Text_0, GymYoungster2_Text_1
+	trainerbattle_single TRAINER_TOMMY, GymYoungster2_Text_0, GymYoungster2_Text_1
 	releaseall
 	end
 
 
 GymElder::
 	lockall
-	trainerbattlesingle TRAINER, GymElder_Text_0, GymElder_Text_1
+	trainerbattle_single TRAINER_TIMOTHY_1, GymElder_Text_0, GymElder_Text_1
 	releaseall
 	end
 
 
 GymYoungster1_Text_0:
-	.string "You have to get through the students first!$"
+	.string "You have to get through the students\n first!$"
 
 GymYoungster1_Text_1:
 	.string "I still have a lot to learn...$"

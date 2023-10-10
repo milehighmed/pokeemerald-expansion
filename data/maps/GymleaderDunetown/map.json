@@ -1,17 +1,17 @@
 {
-  "id": "MAP_DUNETOWN_GYMLEADER",
-  "name": "DunetownGymleader",
-  "layout": "LAYOUT_DUNETOWN_GYMLEADER",
+  "id": "MAP_GYMLEADER_DUNETOWN",
+  "name": "GymleaderDunetown",
+  "layout": "LAYOUT_GYMLEADER_DUNETOWN",
   "music": "MUS_GYM",
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": true,
-  "show_map_name": false,
-  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
     {
@@ -24,36 +24,28 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "Leader_Mikey",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 2,
-      "y": 4,
+      "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_DUNETOWN_GYM",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_GYM_DUNETOWN",
+      "dest_warp_id": "1"
     },
     {
       "x": 1,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_DUNETOWN_GYM",
-      "dest_warp_id": "6"
+      "dest_map": "MAP_GYM_DUNETOWN",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 2,
-      "elevation": 0,
-      "var": "VAR_UNUSED_0x408B",
-      "var_value": "2",
-      "script": "Leader_Mikey"
-    }
+
   ],
   "bg_events": [
 

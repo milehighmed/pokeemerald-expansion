@@ -47,7 +47,8 @@
     "Route11",
     "ShadowyCave",
     "Route12",
-    "Route13"
+    "Route13",
+    "DarksporeForest"
   ],
   "gMapGroup_Dunetown": [
     "Dunetown",
@@ -57,15 +58,13 @@
     "DunetownMart",
     "DunetownShack",
     "DunetownRoad",
+    "GymDunetown",
+    "DunetownDunesBigHouse",
+    "DunetownDunesSmallHouse",
     "DunetownGym",
     "DunetownGymleader",
-    "DunetownGym2F",
-    "DunetownGymBasement",
-    "DunetownGymSublevel",
-    "DunetownGym3F",
-    "DunetownDunesSmallHouse",
-    "DunetownDunesBigHouse",
-    "DunetownTunnel"
+    "DunetownTunnel",
+    "GymleaderDunetown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

@@ -16,6 +16,7 @@
 #define MAP_SHADOWY_CAVE        (7 | (0 << 8))
 #define MAP_ROUTE12             (8 | (0 << 8))
 #define MAP_ROUTE13             (9 | (0 << 8))
+#define MAP_DARKSPORE_FOREST    (10 | (0 << 8))
 
 // gMapGroup_Dunetown
 #define MAP_DUNETOWN                   (0 | (1 << 8))
@@ -25,15 +26,13 @@
 #define MAP_DUNETOWN_MART              (4 | (1 << 8))
 #define MAP_DUNETOWN_SHACK             (5 | (1 << 8))
 #define MAP_DUNETOWN_ROAD              (6 | (1 << 8))
-#define MAP_DUNETOWN_GYM               (7 | (1 << 8))
-#define MAP_DUNETOWN_GYMLEADER         (8 | (1 << 8))
-#define MAP_DUNETOWN_GYM2F             (9 | (1 << 8))
-#define MAP_DUNETOWN_GYM_BASEMENT      (10 | (1 << 8))
-#define MAP_DUNETOWN_GYM_SUBLEVEL      (11 | (1 << 8))
-#define MAP_DUNETOWN_GYM3F             (12 | (1 << 8))
-#define MAP_DUNETOWN_DUNES_SMALL_HOUSE (13 | (1 << 8))
-#define MAP_DUNETOWN_DUNES_BIG_HOUSE   (14 | (1 << 8))
-#define MAP_DUNETOWN_TUNNEL            (15 | (1 << 8))
+#define MAP_GYM_DUNETOWN               (7 | (1 << 8))
+#define MAP_DUNETOWN_DUNES_BIG_HOUSE   (8 | (1 << 8))
+#define MAP_DUNETOWN_DUNES_SMALL_HOUSE (9 | (1 << 8))
+#define MAP_DUNETOWN_GYM               (10 | (1 << 8))
+#define MAP_DUNETOWN_GYMLEADER         (11 | (1 << 8))
+#define MAP_DUNETOWN_TUNNEL            (12 | (1 << 8))
+#define MAP_GYMLEADER_DUNETOWN         (13 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

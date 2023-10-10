@@ -1,6 +1,6 @@
 mapscripts DunetownGymSublevel_MapScripts {}
 
-script GymResearcherSublevel {
+script DunetownGymTrainer2 {
     lockall
     trainerbattle_single (TRAINER_STEVE_2, "My research must continue!", "This data is invaluable,\n thank you.")
     releaseall

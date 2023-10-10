@@ -1111,3 +1111,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route12/scripts.inc"
 
 	.include "data/maps/Route13/scripts.inc"
+
+	.include "data/maps/GymDunetown/scripts.inc"
+
+	.include "data/maps/GymleaderDunetown/scripts.inc"
+
+	.include "data/maps/DarksporeForest/scripts.inc"

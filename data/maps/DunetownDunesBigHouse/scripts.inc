@@ -21,6 +21,7 @@ DunetownBigHouse_Woman::
 DunetownBigHouse_Item::
 	lockall
 	giveitem ITEM_THUNDER_STONE, 1
+	removeobject 3
 	setflag FLAG_UNUSED_0x4AB
 	releaseall
 	end

@@ -32,20 +32,20 @@ VictoryRoad_B2F_EventScript_Dianne::
 	msgbox VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_B2F_Text_VitoIntro:
-	.string "I trained together with my whole family,\n"
-	.string "every one of us!\l"
-	.string "I'm not losing to anyone!$"
+//VictoryRoad_B2F_Text_VitoIntro:
+//	.string "I trained together with my whole family,\n"
+//	.string "every one of us!\l"
+//	.string "I'm not losing to anyone!$"
 
-VictoryRoad_B2F_Text_VitoDefeat:
-	.string "Better than my family?!\n"
-	.string "Is that possible?!$"
+//VictoryRoad_B2F_Text_VitoDefeat:
+//	.string "Better than my family?!\n"
+//	.string "Is that possible?!$"
 
-VictoryRoad_B2F_Text_VitoPostBattle:
-	.string "I was better than everyone in my\n"
-	.string "family. I've never lost before…\p"
-	.string "I've lost my confidence…\n"
-	.string "Maybe I'll go home…$"
+//VictoryRoad_B2F_Text_VitoPostBattle:
+//	.string "I was better than everyone in my\n"
+//	.string "family. I've never lost before…\p"
+//	.string "I've lost my confidence…\n"
+//	.string "Maybe I'll go home…$"
 
 VictoryRoad_B2F_Text_OwenIntro:
 	.string "I'd heard that there was a tough\n"

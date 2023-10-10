@@ -4670,6 +4670,36 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route13/border.bin",
       "blockdata_filepath": "data/layouts/Route13/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYM_DUNETOWN",
+      "name": "GymDunetown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/GymDunetown/border.bin",
+      "blockdata_filepath": "data/layouts/GymDunetown/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYMLEADER_DUNETOWN",
+      "name": "GymleaderDunetown_Layout",
+      "width": 5,
+      "height": 5,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/GymleaderDunetown/border.bin",
+      "blockdata_filepath": "data/layouts/GymleaderDunetown/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARKSPORE_FOREST",
+      "name": "DarksporeForest_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/DarksporeForest/border.bin",
+      "blockdata_filepath": "data/layouts/DarksporeForest/map.bin"
     }
   ]
 }

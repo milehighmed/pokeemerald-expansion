@@ -1,0 +1,27 @@
+mapscripts GymDunetown_MapScripts {}
+
+script Dunetown_Sponsor{
+    lockall
+    faceplayer
+    msgbox(format("Hey! Glad you made it, Champ-In-The-Making! A quick word of advice. Mikey is a Sandstorm expert, both in terms of his research and his battling style. I hope you have a better strategy than hoping you can counter his Ground-Types just by using types strong against them!"))
+    if(!(flag(FLAG_UNUSED_0x26A))){
+    msgbox(format("Here, this sand in here is killer!"))
+    waitmessage
+    giveitem (ITEM_FRESH_WATER, 1)
+    setflag (FLAG_UNUSED_0x26A)
+    
+}
+else{
+   msgbox(format("Hey! Glad you made it Champ-In-The-Making! A quick word of advice. Mikey is a Sandstorm expert, both in terms of his research and his battling style. I hope you have a better strategy than hoping you can counter his Ground-Types just by using types strong against them!"))
+}
+waitmessage
+releaseall
+end
+}
+
+script GymTest{
+
+trainerbattle_single(TRAINER_GRUNT_PETALBURG_WOODS, "I've studied the sands my\n whole life!", "So much that I still don't\n know...")
+waitmessage
+end
+}

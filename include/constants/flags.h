@@ -114,10 +114,10 @@
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
 #define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
-#define FLAG_MOSSDEEP_GYM_SWITCH_1           0x64 // Leftover from the RS version of Mossdeep Gym, functionally unused
-#define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
+#define FLAG_MOSSDEEP_GYM_SWITCH_1           0x64 // used
+#define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 // used
+#define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 // used
+#define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 // used
 
 #define FLAG_UNUSED_0x068                    0x68  // Unused Flag
 
@@ -129,7 +129,7 @@
 #define FLAG_RECEIVED_HM_FLY                 0x6E
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
-#define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
+#define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // used // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
@@ -168,7 +168,7 @@
 #define FLAG_MR_BRINEY_SAILING_INTRO         0x93
 #define FLAG_DOCK_REJECTED_DEVON_GOODS       0x94
 #define FLAG_DELIVERED_DEVON_GOODS           0x95
-#define FLAG_RECEIVED_CONTEST_PASS           0x96 // Unused, leftover from R/S
+#define FLAG_RECEIVED_CONTEST_PASS           0x96 // used
 #define FLAG_RECEIVED_CASTFORM               0x97
 #define FLAG_RECEIVED_SUPER_ROD              0x98
 #define FLAG_RUSTBORO_NPC_TRADE_COMPLETED    0x99
@@ -340,22 +340,22 @@
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
-#define FLAG_WONDER_CARD_UNUSED_5            0x141
-#define FLAG_WONDER_CARD_UNUSED_6            0x142
-#define FLAG_WONDER_CARD_UNUSED_7            0x143
-#define FLAG_WONDER_CARD_UNUSED_8            0x144
-#define FLAG_WONDER_CARD_UNUSED_9            0x145
-#define FLAG_WONDER_CARD_UNUSED_10           0x146
-#define FLAG_WONDER_CARD_UNUSED_11           0x147
-#define FLAG_WONDER_CARD_UNUSED_12           0x148
-#define FLAG_WONDER_CARD_UNUSED_13           0x149
-#define FLAG_WONDER_CARD_UNUSED_14           0x14A
-#define FLAG_WONDER_CARD_UNUSED_15           0x14B
-#define FLAG_WONDER_CARD_UNUSED_16           0x14C
-#define FLAG_WONDER_CARD_UNUSED_17           0x14D
+#define FLAG_WONDER_CARD_UNUSED_2            0x13E //used
+#define FLAG_WONDER_CARD_UNUSED_3            0x13F //used
+#define FLAG_WONDER_CARD_UNUSED_4            0x140 //used
+#define FLAG_WONDER_CARD_UNUSED_5            0x141 //used
+#define FLAG_WONDER_CARD_UNUSED_6            0x142 //used
+#define FLAG_WONDER_CARD_UNUSED_7            0x143//used
+#define FLAG_WONDER_CARD_UNUSED_8            0x144//used
+#define FLAG_WONDER_CARD_UNUSED_9            0x145//used
+#define FLAG_WONDER_CARD_UNUSED_10           0x146//used
+#define FLAG_WONDER_CARD_UNUSED_11           0x147//used
+#define FLAG_WONDER_CARD_UNUSED_12           0x148//used
+#define FLAG_WONDER_CARD_UNUSED_13           0x149//used
+#define FLAG_WONDER_CARD_UNUSED_14           0x14A//used
+#define FLAG_WONDER_CARD_UNUSED_15           0x14B//USED
+#define FLAG_WONDER_CARD_UNUSED_16           0x14C//used
+#define FLAG_WONDER_CARD_UNUSED_17           0x14D//used
 #define NUM_WONDER_CARD_FLAGS                (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
 
 #define FLAG_MIRAGE_TOWER_VISIBLE            0x14E
@@ -506,15 +506,15 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
+#define FLAG_UNUSED_0x1DA                    0x1DA //used Flag
 
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
+#define FLAG_UNUSED_0x1DE                    0x1DE // used Flag
+#define FLAG_UNUSED_0x1DF                    0x1DF // used Flag
+#define FLAG_UNUSED_0x1E0                    0x1E0 // used Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag

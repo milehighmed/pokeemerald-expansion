@@ -1,0 +1,19 @@
+mapscripts Route13House_MapScripts {}
+
+script MrDigital {
+    lockall
+    faceplayer
+    msgbox(format("My name is Mr. Digital! I moved here from Silver City years ago after the hustle and bustle got to be too much for me! My wife and I were business partners, and together founded the company that would go on to develop technology crucial to the Interface Terminals used everywhere in Nova City! But, while we agreed that it was time to leave it all behind, we didn't agree on how to go about it. She disappeared during the early explorations into the Digital Underworld. It's just me and Poochyena now... What I wouldn't give to know if she was still out there..."))
+    waitmessage
+    releaseall
+    end
+}
+
+script MrDigitalPoochyena {
+    lockall
+    faceplayer
+    msgbox(format("Grr! Chyeh!"))
+    waitmessage
+    releaseall
+    end
+}

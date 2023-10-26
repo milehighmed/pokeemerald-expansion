@@ -1,0 +1,32 @@
+mapscripts BricksTunnel_MapScripts {}
+
+script BricksWarning {
+    lockall
+    faceplayer
+    msgbox(format("Hey! If you're here that means Leader Mikey gave you his blessing to leave Dunetown! Congratulations. Now, your next move is totally up to you, but you should also know that the path up ahead is dangerous and full of strong opponents! If I were you, I'd head North to Watt Junction and challenge Leader Niko first. Either way, good luck to you!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script BricksTunnelItem{
+    lockall
+    giveitem(ITEM_TM_DIG,1)
+    removeobject(1)
+    setflag(FLAG_UNUSED_0x269)
+    releaseall
+    end
+}
+
+script BricksTunnelBattle1{
+    trainerbattle_single (TRAINER_DUSTY_1, "These tunnels were\ncarved by a\pPokémon!", "You carved me\nup!")
+    releaseall
+    end
+    
+}
+
+script BricksTunnelBattle2{
+    trainerbattle_single(TRAINER_ELI, "I'm here training\n before I challenge\p Leader Sam!", "I need a new\n approach.")
+    releaseall
+    end
+}

@@ -4700,6 +4700,946 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/DarksporeForest/border.bin",
       "blockdata_filepath": "data/layouts/DarksporeForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARKSPORE_TUNNEL",
+      "name": "DarksporeTunnel_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DarksporeTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/DarksporeTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE13HOUSE",
+      "name": "Route13House_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route13House/border.bin",
+      "blockdata_filepath": "data/layouts/Route13House/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUSKPORE_SHACK",
+      "name": "DuskporeShack_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DuskporeShack/border.bin",
+      "blockdata_filepath": "data/layouts/DuskporeShack/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_ROAD",
+      "name": "WattJunctionRoad_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/WattJunctionRoad/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION",
+      "name": "WattJunction_Layout",
+      "width": 38,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/WattJunction/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunction/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_POKECENTER",
+      "name": "WattJunctionPokecenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/WattJunctionPokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionPokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_POKEMART",
+      "name": "WattJunctionPokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/WattJunctionPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM1F",
+      "name": "WattJunctionGym1F_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGym1F/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGym1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM_GR_FLOOR",
+      "name": "WattJunctionGymGrFloor_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/WattJunctionGymGrFloor/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymGrFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM_STAIRWELL1",
+      "name": "WattJunctionGymStairwell1_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGymStairwell1/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymStairwell1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM_LOBBY",
+      "name": "WattJunctionGymLobby_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGymLobby/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_BRICKS",
+      "name": "TheBricks_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/TheBricks/border.bin",
+      "blockdata_filepath": "data/layouts/TheBricks/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_TUNNEL",
+      "name": "BricksTunnel_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BricksTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/BricksTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_POWER_PLANT",
+      "name": "WattJunctionPowerPlant_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/WattJunctionPowerPlant/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionPowerPlant/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_ARENA1",
+      "name": "WattJunctionArena1_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/WattJunctionArena1/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionArena1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM_STAIRWELL2",
+      "name": "WattJunctionGymStairwell2_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGymStairwell2/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymStairwell2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYM_STAIRWELL3",
+      "name": "WattJunctionGymStairwell3_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGymStairwell3/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymStairwell3/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_GYMLEADER",
+      "name": "WattJunctionGymleader_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/WattJunctionGymleader/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionGymleader/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_ARENA2",
+      "name": "WattJunctionArena2_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/WattJunctionArena2/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionArena2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATT_JUNCTION_ARENA3",
+      "name": "WattJunctionArena3_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/WattJunctionArena3/border.bin",
+      "blockdata_filepath": "data/layouts/WattJunctionArena3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SMALL_HOUSE1",
+      "name": "SmallHouse1_Layout",
+      "width": 6,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SmallHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/SmallHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SMALL_HOUSE2",
+      "name": "SmallHouse2_Layout",
+      "width": 6,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SmallHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/SmallHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIG_HOUSE1",
+      "name": "BigHouse1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BigHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/BigHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIG_HOUSE2",
+      "name": "BigHouse2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BigHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/BigHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIG_HOUSE3",
+      "name": "BigHouse3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BigHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/BigHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING1",
+      "name": "OfficeBuilding1_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding1/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING1FIRST_FLOOR",
+      "name": "OfficeBuilding1FirstFloor_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding1FirstFloor/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding1FirstFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING1SECOND_FLOOR",
+      "name": "OfficeBuilding1SecondFloor_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding1SecondFloor/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding1SecondFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING2",
+      "name": "OfficeBuilding2_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding2/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING2FIRST_FLOOR",
+      "name": "OfficeBuilding2FirstFloor_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding2FirstFloor/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding2FirstFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_OFFICE_BUILDING2SECOND_FLOOR",
+      "name": "OfficeBuilding2SecondFloor_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OfficeBuilding2SecondFloor/border.bin",
+      "blockdata_filepath": "data/layouts/OfficeBuilding2SecondFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_POWER_PLANT_INTERIOR",
+      "name": "PowerPlantInterior_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PowerPlantInterior/border.bin",
+      "blockdata_filepath": "data/layouts/PowerPlantInterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_POWER_PLANT_INTERIOR_L",
+      "name": "PowerPlantInteriorL_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PowerPlantInteriorL/border.bin",
+      "blockdata_filepath": "data/layouts/PowerPlantInteriorL/map.bin"
+    },
+    {
+      "id": "LAYOUT_POWER_PLANT_INTERIOR_R",
+      "name": "PowerPlantInteriorR_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PowerPlantInteriorR/border.bin",
+      "blockdata_filepath": "data/layouts/PowerPlantInteriorR/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLOAM_TUNNEL",
+      "name": "GloamTunnel_Layout",
+      "width": 25,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GloamTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/GloamTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE14",
+      "name": "Route14_Layout",
+      "width": 30,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route14/border.bin",
+      "blockdata_filepath": "data/layouts/Route14/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_POKECENTER",
+      "name": "BricksPokecenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/BricksPokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/BricksPokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_POKEMART",
+      "name": "BricksPokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/BricksPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/BricksPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_SMALL_HOUSE",
+      "name": "BricksSmallHouse_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BricksSmallHouse/border.bin",
+      "blockdata_filepath": "data/layouts/BricksSmallHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_SMALL_HOUSE_BASEMENT",
+      "name": "BricksSmallHouseBasement_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BricksSmallHouseBasement/border.bin",
+      "blockdata_filepath": "data/layouts/BricksSmallHouseBasement/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE15",
+      "name": "Route15_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route15/border.bin",
+      "blockdata_filepath": "data/layouts/Route15/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_GYM",
+      "name": "BricksGym_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/BricksGym/border.bin",
+      "blockdata_filepath": "data/layouts/BricksGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_NICE_HOUSE",
+      "name": "BricksNiceHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BricksNiceHouse/border.bin",
+      "blockdata_filepath": "data/layouts/BricksNiceHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE15N",
+      "name": "Route15N_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route15N/border.bin",
+      "blockdata_filepath": "data/layouts/Route15N/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE14E",
+      "name": "Route14E_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Route14E/border.bin",
+      "blockdata_filepath": "data/layouts/Route14E/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE15NE",
+      "name": "Route15NE_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Route15NE/border.bin",
+      "blockdata_filepath": "data/layouts/Route15NE/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL",
+      "name": "LakeLoral_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LakeLoral/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoral/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_N",
+      "name": "LakeLoralN_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LakeLoralN/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralN/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYPORT_SOUTH",
+      "name": "HoneyportSouth_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/HoneyportSouth/border.bin",
+      "blockdata_filepath": "data/layouts/HoneyportSouth/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYPORT",
+      "name": "Honeyport_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Honeyport/border.bin",
+      "blockdata_filepath": "data/layouts/Honeyport/map.bin"
+    },
+    {
+      "id": "LAYOUT_WJTERMINAL",
+      "name": "WJTerminal_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/WJTerminal/border.bin",
+      "blockdata_filepath": "data/layouts/WJTerminal/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_POKECENTER",
+      "name": "LakeLoralPokecenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/LakeLoralPokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralPokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_POKEMART",
+      "name": "LakeLoralPokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LakeLoralPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNBEAM_ENTRY_L",
+      "name": "SunbeamEntryL_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SunbeamEntryL/border.bin",
+      "blockdata_filepath": "data/layouts/SunbeamEntryL/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDEVILLE",
+      "name": "Verdeville_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Verdeville/border.bin",
+      "blockdata_filepath": "data/layouts/Verdeville/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNBEAM_FOREST",
+      "name": "SunbeamForest_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SunbeamForest/border.bin",
+      "blockdata_filepath": "data/layouts/SunbeamForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN_HALL",
+      "name": "TownHall_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TownHall/border.bin",
+      "blockdata_filepath": "data/layouts/TownHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUSH_VALLEY_POKEMART",
+      "name": "LushValleyPokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LushValleyPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/LushValleyPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNBEAM_CAVE",
+      "name": "SunbeamCave_Layout",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SunbeamCave/border.bin",
+      "blockdata_filepath": "data/layouts/SunbeamCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEAUXS_HOUSE",
+      "name": "BeauxsHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BeauxsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/BeauxsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDE_HOUSE1",
+      "name": "VerdeHouse1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VerdeHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/VerdeHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25",
+      "name": "Route25_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route25/border.bin",
+      "blockdata_filepath": "data/layouts/Route25/map.bin"
+    },
+    {
+      "id": "LAYOUT_HORN_HOLLOW_BEACH",
+      "name": "HornHollowBeach_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/HornHollowBeach/border.bin",
+      "blockdata_filepath": "data/layouts/HornHollowBeach/map.bin"
+    },
+    {
+      "id": "LAYOUT_HORN_HOLLOW",
+      "name": "HornHollow_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/HornHollow/border.bin",
+      "blockdata_filepath": "data/layouts/HornHollow/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE16",
+      "name": "Route16_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route16/border.bin",
+      "blockdata_filepath": "data/layouts/Route16/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_SHOP_CENTER",
+      "name": "BricksShopCenter_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BricksShopCenter/border.bin",
+      "blockdata_filepath": "data/layouts/BricksShopCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_SHOP_CENTER1F",
+      "name": "BricksShopCenter1F_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BricksShopCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/BricksShopCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP3",
+      "name": "NewMap3_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap3/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap3/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDE_HOUSE2",
+      "name": "VerdeHouse2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VerdeHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/VerdeHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_HORN_HEALER",
+      "name": "HornHealer_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HornHealer/border.bin",
+      "blockdata_filepath": "data/layouts/HornHealer/map.bin"
+    },
+    {
+      "id": "LAYOUT_HORN_HOUSE1",
+      "name": "HornHouse1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HornHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/HornHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_HORN_HOUSE2",
+      "name": "HornHouse2_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HornHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/HornHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRAS_SHED",
+      "name": "MyrasShed_Layout",
+      "width": 4,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MyrasShed/border.bin",
+      "blockdata_filepath": "data/layouts/MyrasShed/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25FARMHOUSE",
+      "name": "Route25Farmhouse_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route25Farmhouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route25Farmhouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25FARMHOUSE_BASEMENT",
+      "name": "Route25FarmhouseBasement_Layout",
+      "width": 6,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route25FarmhouseBasement/border.bin",
+      "blockdata_filepath": "data/layouts/Route25FarmhouseBasement/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25FARMHOUSE_ATTIC",
+      "name": "Route25FarmhouseAttic_Layout",
+      "width": 6,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route25FarmhouseAttic/border.bin",
+      "blockdata_filepath": "data/layouts/Route25FarmhouseAttic/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRAS_HOUSE",
+      "name": "MyrasHouse_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MyrasHouse/border.bin",
+      "blockdata_filepath": "data/layouts/MyrasHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP4",
+      "name": "NewMap4_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap4/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap4/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYPORT_HOUSE1",
+      "name": "HoneyportHouse1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HoneyportHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/HoneyportHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYPORT_HOUSE2",
+      "name": "HoneyportHouse2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HoneyportHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/HoneyportHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDE_HOUSE3",
+      "name": "VerdeHouse3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VerdeHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/VerdeHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDE_HOUSE4",
+      "name": "VerdeHouse4_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VerdeHouse4/border.bin",
+      "blockdata_filepath": "data/layouts/VerdeHouse4/map.bin"
+    },
+    {
+      "id": "LAYOUT_LORAL_GYM",
+      "name": "LoralGym_Layout",
+      "width": 16,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/LoralGym/border.bin",
+      "blockdata_filepath": "data/layouts/LoralGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE17",
+      "name": "Route17_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route17/border.bin",
+      "blockdata_filepath": "data/layouts/Route17/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOLOA_WETLANDS",
+      "name": "LoloaWetlands_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LoloaWetlands/border.bin",
+      "blockdata_filepath": "data/layouts/LoloaWetlands/map.bin"
+    },
+    {
+      "id": "LAYOUT_RELIC_QUARRY",
+      "name": "RelicQuarry_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RelicQuarry/border.bin",
+      "blockdata_filepath": "data/layouts/RelicQuarry/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIMORDIAL_CAVERN",
+      "name": "PrimordialCavern_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/PrimordialCavern/border.bin",
+      "blockdata_filepath": "data/layouts/PrimordialCavern/map.bin"
+    },
+    {
+      "id": "LAYOUT_LORAL_GAME_HOUSE",
+      "name": "LoralGameHouse_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/LoralGameHouse/border.bin",
+      "blockdata_filepath": "data/layouts/LoralGameHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_HOUSE1",
+      "name": "LakeLoralHouse1_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LakeLoralHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_HOUSE2",
+      "name": "LakeLoralHouse2_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LakeLoralHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_LORAL_HOUSE3",
+      "name": "LakeLoralHouse3_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LakeLoralHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/LakeLoralHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRICKS_TERMINAL",
+      "name": "BricksTerminal_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/BricksTerminal/border.bin",
+      "blockdata_filepath": "data/layouts/BricksTerminal/map.bin"
     }
   ]
 }

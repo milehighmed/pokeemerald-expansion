@@ -1,0 +1,57 @@
+mapscripts LoralGym_MapScripts {}
+
+script LoralSponsor{
+    lockall
+    faceplayer
+     msgbox(format("Hey, Champ-In-The-Making! I was wondering where you were! Leader Ross' battle style is torrential! Hope you saved up for a rainy day!"))
+    if(!(flag(FLAG_UNUSED_0x1E0 ))){
+    msgbox(format("Here, stay hydrated!"))
+    waitmessage
+    giveitem (ITEM_SODA_POP, 1)
+    setflag (FLAG_UNUSED_0x1E0 )
+    
+}
+else{
+   msgbox(format("Hey, Champ-In-The-Making! I was wondering where you were! Leader Ross' battle style is totally torrential! Hope you saved up for a rainy day!"))
+}
+waitmessage
+releaseall
+end
+}
+
+script Leader_Ross{
+    lockall
+    if (var(VAR_ROUTE103_STATE) == 0) {
+    goto (Leader_RossBattle)}
+else {
+    msgbox(format("You should have no issues wherever your journey takes you next. Good luck!"))
+    releaseall
+    end
+}
+}
+
+script Leader_RossBattle{
+    lockall
+    faceplayer
+    msgbox(format("I already heard all about your success at Lush Valley! I'm gonna be honest, I had no real expectation for you to actually pull that off! So, I figured I'd send my Trainers home for the day. Yup, that's right. You've done enough as it is, all you have left is to challenge me and earn my badge for your PassID."))
+    trainerbattle_single(TRAINER_BRICE, "I won't go easy on you!", "Hah! Just as I expected.", Loral_Victory)
+    releaseall
+    end
+}
+
+script Loral_Victory {
+    lockall
+    setflag(FLAG_BADGE04_GET)
+    msgbox(format("Here, take these. They're my favorite moves! I know you'll use them well."))
+    waitmessage
+    giveitem (ITEM_HM03, 1)
+    giveitem (ITEM_TM56,1)
+    waitfanfare
+    msgbox(format("You got the Bay Badge! Pokémon up to Level 50 will now obey you."))
+    call (Common_EventScript_PlayGymBadgeFanfare)
+    setvar(VAR_ROUTE103_STATE,1)
+    msgbox(format("You should have no issues wherever your journey takes you next. Good luck!"))
+    waitmessage
+    releaseall
+    end
+}

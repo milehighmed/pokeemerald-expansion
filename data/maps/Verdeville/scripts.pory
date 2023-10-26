@@ -1,0 +1,33 @@
+mapscripts Verdeville_MapScripts {}
+
+script VerdevilleSign{
+    lockall
+    msgbox(format("Verdeville: Grow and Thrive!"))
+    releaseall
+    end
+}
+
+script BeauxSign{
+    lockall
+    msgbox(format("Beaux's House"))
+    releaseall
+    end
+}
+
+script BeauxBlock{
+    lockall
+    faceplayer
+    msgbox(format("Beaux isn't home right now, he left for Sunbeam Forest. You can look for him there if you don't want to wait around!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script VerdeGirl1{
+    lockall
+    faceplayer
+    msgbox(format("I visited Lush Valley once from Nova City and fell in love with this place. Now I live here! The secret to getting out of the City is not telling anyone and just going for it!"))
+    waitmessage
+    releaseall
+    end
+}

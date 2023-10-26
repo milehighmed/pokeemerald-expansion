@@ -1,0 +1,10 @@
+mapscripts SmallHouse2_MapScripts {}
+
+script WJExpertF{
+    lockall
+    faceplayer
+    msgbox(format("The tall grass outside of the Power Plant is teeming with wild Pokémon. Be cautious."))
+    waitmessage
+    releaseall
+    end
+}

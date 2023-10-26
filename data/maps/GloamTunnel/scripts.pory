@@ -1,0 +1,49 @@
+mapscripts GloamTunnel_MapScripts {}
+
+script GloamItem{
+    lockall
+    giveitem(ITEM_TM31,1)
+    removeobject(3)
+    setflag(FLAG_UNUSED_0x277)
+    releaseall
+    end
+}
+
+script GloamTunnelGuard {
+    lockall
+    faceplayer
+    msgbox(format("I check PassIDs."))
+    releaseall
+    end
+}
+
+script GloamTunnel_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_BADGE01_GET, GloamTunnel_Stop )
+    msgbox(format("STOP! You haven't been authorized by Leader Mikey to leave this district."))
+    applymovement(OBJ_EVENT_ID_PLAYER, GloamTunnel_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script GloamTunnel_Stop {
+    msgbox(format("Hold on. I need to check your PassID...\n...\p...\p...\pAlright, go ahead."))
+    waitmessage
+    releaseall
+    end
+}
+
+movement GloamTunnel_GoBack {
+    walk_up
+}
+
+script CavernGuard {
+    lockall
+    faceplayer
+    msgbox(format("This area is under the protection of the Nova City Archeological Society. Sorry, but I can't let you in without prior approval."))
+    waitmessage
+    releaseall
+    end
+}

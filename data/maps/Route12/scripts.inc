@@ -64,6 +64,23 @@ Route12Item3::
 	end
 
 
+OldRod::
+	lockall
+	faceplayer
+	goto_if_unset FLAG_RECEIVED_OLD_ROD, OldRod_1
+	msgbox OldRod_Text_1
+	waitmessage
+	releaseall
+	end
+
+OldRod_1:
+	msgbox OldRod_Text_0
+	waitmessage
+	giveitem ITEM_OLD_ROD, 1
+	setflag FLAG_RECEIVED_OLD_ROD
+	return
+
+
 Route12_Sign_Text_0:
 	.string "TRAINER TIPS: If you're having trouble\n"
 	.string "catching a strong Pokémon, remember to\l"
@@ -96,3 +113,11 @@ Route12_Lass_Text_0:
 
 Route12_Lass_Text_1:
 	.string "My Oran Berry was stolen \n by a Purrloin!$"
+
+OldRod_Text_0:
+	.string "I can't catch anything good with this\n"
+	.string "Old Rod! You take it!$"
+
+OldRod_Text_1:
+	.string "I hope you have better luck with it\n"
+	.string "than I did!$"

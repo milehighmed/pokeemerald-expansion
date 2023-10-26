@@ -1,0 +1,170 @@
+mapscripts TownHall_MapScripts {}
+
+script TownHall_Ross{
+    lockall
+    faceplayer
+    applymovement(1, PlayerExclamation)
+    waitmovement(1)
+    msgbox(format("Oh hey, Trainer.\p...\p...\pI see. So the boat Captain brought you here. Well, if you were expecting to be able to challenge me, I'm afraid I don't have time for it right now. Other than approving citizens for travel between districts, Leaders also have to handle local political matters. Normally, the dock at Loral Resort receives shipments of food from Lush Valley that is then shipped throughout Nova City, but according to the leaders here, they haven't been paid correctly for two orders in a row. I came to investigate and attempt negotiations, but the leaders of the other two towns in Lush Valley couldn't reach a compromise. Now, I'm out of time and have to return back to Loral Resort. But I'll cut you a deal! If you can work with the Mayor here to find a solution, I'll open the Gym back up for you early! Good luck, I've gotta get going!"))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRoss)
+    waitmovement (OBJ_EVENT_ID_PLAYER)
+    applymovement(1, RossExit)
+    waitmovement(1)
+    removeobject(1)
+    setflag(FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE)
+    releaseall
+    end
+}
+
+script Mayor{
+    lockall
+    setflag(FLAG_UNUSED_0x1DF)
+    setflag(FLAG_WONDER_CARD_UNUSED_4)
+    faceplayer
+    if (defeated(TRAINER_JAMES_5) && defeated(TRAINER_GRUNT_WEATHER_INST_3)) {
+        msgbox(format("Hello, Trainer. I've received word from Beaux and Myra. We're all ready to meet again. Please, help me oversee the proceedings as a mediator. We'll begin shortly."))
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        setflag(FLAG_WONDER_CARD_UNUSED_17)
+        fadescreen(FADE_TO_BLACK)
+        clearflag(FLAG_WONDER_CARD_UNUSED_16)
+        removeobject(2)
+        fadescreen(FADE_FROM_BLACK)
+        delay (40)
+        msgbox(format("Mayor: Well, everyone's here. Let's begin where we left off: Leader Ross proposed that Lush Valley continue supplying Nova City with food, with the understanding that the payment discrepancy would be fulfilled at a later date. Leader Beaux, you agreed with this plan, citing that our community would lose its only source of outside income if we stopped supplying Nova City, regardless of what they pay us. Is that correct?"))
+        waitmessage
+        msgbox(format("Beaux: That's correct. I reasoned that it's better than nothing, and we can at least get something while we work on ironing out a permanent solution."))
+        waitmessage
+        msgbox(format("Myra: Meanwhile, I actually offered a permanent solution. We can take this opportunity to distance ourselves from Nova City. Who says we need their money anyways? We have enough food for ourselves here, we should turn our attention inwards."))
+        waitmessage
+        msgbox(format("Mayor: Myra, please refrain from interrupting. There's an order to this sort of thing! Both of you offer fair reasoning."))
+        waitmessage
+        msgbox(format("Beaux: Trainer, now may be a good time to get your opinion."))
+        waitmessage
+        msgbox("Do you think it's a good idea to\ncontinue trade with Nova City?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES){
+                applymovement(4, PlayerExclamation)
+                msgbox(format("Myra: Then what about us? What if we deplete our stores for nothing? What if we don't end up with enough money from bad trades to survive?"))
+                waitmessage
+                msgbox("Should we trust Nova City to pay\nenough?", MSGBOX_YESNO)
+                    if(var(VAR_RESULT) == YES){
+                        msgbox(format("Beaux: Perfect, I knew you would side with me. It's settled then, we'll continue selling to Nova City and keep track of the debts we're owed."))
+                        waitmessage
+                        msgbox(format("Myra: What if we don't have enough for ourselves though? All it would take is for Nova City to lower payment again and we'd be out of food and out of money. We'd starve!"))
+                        waitmessage
+                        msgbox(format("Mayor: In that case, we'll do what we've always done. We'll get through it together. Trainer, thank you for your help in resolving this. Please tell Leader Ross the decision we've come to. Good luck to you on the rest of your journey."))
+                        setflag(FLAG_WONDER_CARD_UNUSED_16)
+                        fadescreen(FADE_TO_BLACK)
+                        removeobject(3)
+                        removeobject(4)
+                        removeobject(5)
+                        fadescreen(FADE_FROM_BLACK)
+                        releaseall
+                        end
+                    }
+                    else{
+                        applymovement(5, PlayerExclamation)
+                        msgbox(format("Beaux: What're you saying, then? We can't have it both ways!"))
+                        waitmessage
+                        msgbox(format("Myra: Yeah, how can we keep our stores stocked while still continuing trade with Nova City?"))
+                        waitmessage
+                        applymovement(6, PlayerExclamation)
+                        msgbox(format("Mayor: Aha! I get it! You're saying that we should build up our stores first, and then reopen trade with Nova City afterwards!"))
+                        waitmessage
+                        msgbox(format("Beaux: Oh! That means we would be able to meet in the middle!"))
+                        waitmessage
+                        msgbox(format("Myra: You're kidding! Why didn't I think of that?"))
+                        waitmessage
+                        msgbox(format("Mayor: Hah! You two were so preoccupied with being right that you didn't stop to consider if there was a middleground between you! It's settled then. We'll continue to build up our own stockpiles. Hopefully, Nova City will come to their senses in the meantime and start paying what they owe us! Trainer, thank you for your help in resolving this. Please tell Leader Ross the decision we've come to. Good luck to you on the rest of your journey."))
+                        setflag(FLAG_WONDER_CARD_UNUSED_16)
+                    fadescreen(FADE_TO_BLACK)
+                    removeobject(3)
+                    removeobject(4)
+                    removeobject(5)
+                    fadescreen(FADE_FROM_BLACK)
+                        releaseall
+                        end
+                    }
+            }
+            else{
+                msgbox(format("Myra: So you agree with me then! It's settled, we'll start stockpiling and prepare to become wholly independent of Nova City."))
+                waitmessage
+                msgbox("You do agree with me, right?", MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES){
+                    msgbox(format("Beaux: I guess that isn't the end of the world, if it's what's best. It is true that we have enough food to go around, I just worry about what might happen if our community suddenly can't provide enough for itself. All it would take is a single disaster to ruin us..."))
+                    waitmessage
+                    msgbox(format("Mayor: In that case, we'll do what we've always done. We'll get through it together. Trainer, thank you for your help in resolving this. Please tell Leader Ross the decision we've come to. Good luck to you on the rest of your journey."))
+                    setflag(FLAG_WONDER_CARD_UNUSED_16)
+                    fadescreen(FADE_TO_BLACK)
+                    removeobject(3)
+                    removeobject(4)
+                    removeobject(5)
+                    fadescreen(FADE_FROM_BLACK)
+                    releaseall
+                    end
+                }
+                else{
+                        applymovement(5, PlayerExclamation)
+                        msgbox(format("Beaux: What're you saying, then? We can't have it both ways!"))
+                        waitmessage
+                        msgbox(format("Myra: Yeah, how can we keep our stores stocked while still continuing trade with Nova City?"))
+                        waitmessage
+                        applymovement(6, PlayerExclamation)
+                        msgbox(format("Mayor: Aha! I get it! You're saying that we should build up our stores first, and then reopen trade with Nova City afterwards!"))
+                        waitmessage
+                        msgbox(format("Beaux: Oh! That means we would be able to meet in the middle!"))
+                        waitmessage
+                        msgbox(format("Myra: You're kidding! Why didn't I think of that?"))
+                        waitmessage
+                        msgbox(format("Mayor: Hah! You two were so preoccupied with being right that you didn't stop to consider if there was a middleground between you! It's settled then. We'll continue to build up our own stockpiles. Hopefully, Nova City will come to their senses in the meantime and start paying what they owe us! Trainer, thank you for your help in resolving this. Please tell Leader Ross the decision we've come to. Good luck to you on the rest of your journey."))
+                        setflag(FLAG_WONDER_CARD_UNUSED_16)
+                    fadescreen(FADE_TO_BLACK)
+                    removeobject(3)
+                    removeobject(4)
+                    removeobject(5)
+                    fadescreen(FADE_FROM_BLACK)
+                        releaseall
+                        end
+                    }
+            }
+
+    }
+    else{
+    msgbox(format("Well, it's just as you heard from Leader Ross. We're in a bit of a bad way over here in Lush Valley at the moment. We aren't technically a part of Nova City, but we still depend on the export of our goods in order to make enough money to live. Lately, the City hasn't been paying what it used to and refuses to explain why. Beaux, the leader of Verdeville, is worried that if we don't keep fulfilling orders regardless, we'll run out of money. Myra, the leader of Horn Hollow, believes that we should take this as an opportunity to become independent from Nova City, and begin stockpiling food. Both sides have good points, but now they won't even come together to meet! No matter the decision, I know that if the three communities in Lush Valley can't work together, then we'll all fail. Please, go see if you can get the leaders to convene just once more."))
+    releaseall
+    end
+    }
+}
+
+
+movement PlayerMoveRoss{
+    walk_down
+    face_up
+}
+
+movement RossExit{
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement FaceRight{
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    face_right
+}

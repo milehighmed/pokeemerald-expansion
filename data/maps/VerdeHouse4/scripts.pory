@@ -1,0 +1,9 @@
+mapscripts VerdeHouse4_MapScripts {}
+
+script VerdeLass{
+    lockall
+    faceplayer
+    msgbox(format("Trainers come from all around to catch Pokémon in Lush Valley! There's a rarer variety here than anywhere in Nova City, I bet!"))
+    releaseall
+    end
+}

@@ -1,0 +1,9 @@
+mapscripts Honeyport_MapScripts {}
+
+script HoneyportTownHall{
+    lockall
+    msgbox(format("Town Hall"))
+    releaseall
+    end
+}
+

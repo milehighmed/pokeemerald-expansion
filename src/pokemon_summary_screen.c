@@ -2333,8 +2333,6 @@ static bool8 CanReplaceMove(void)
         || sMonSummaryScreen->newMove == MOVE_NONE
         || IsMoveHM(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE)
         return TRUE;
-    else
-        return FALSE;
 }
 
 static void ShowCantForgetHMsWindow(u8 taskId)

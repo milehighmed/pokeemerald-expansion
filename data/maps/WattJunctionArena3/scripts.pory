@@ -1,0 +1,9 @@
+mapscripts WattJunctionArena3_MapScripts {}
+
+script WJTrainer3{
+    trainerbattle_single (TRAINER_HALEY_1, "I'm an engineering intern for Watt Junction Power Company!", "I lied on my resume, my major is in Civil Engineering...")
+    releaseall
+    end
+
+}
+

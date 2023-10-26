@@ -1,0 +1,10 @@
+mapscripts VerdeHouse1_MapScripts {}
+
+script VerdeMan1{
+    lockall
+    faceplayer
+    msgbox(format("My dad worked the fields, I worked the fields, now my son works the field! It's a simple, fulfilling life."))
+    waitmessage
+    releaseall
+    end
+}

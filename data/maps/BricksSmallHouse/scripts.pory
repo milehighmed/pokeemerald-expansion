@@ -1,0 +1,21 @@
+mapscripts BricksSmallHouse_MapScripts {}
+
+script BricksSmallHouseItem{
+    lockall
+    giveitem(ITEM_TM52,1)
+    removeobject(2)
+    setflag(FLAG_UNUSED_0x278)
+    releaseall
+    end
+}
+
+script BricksSmallHouseLass{
+    lockall
+    faceplayer
+    applymovement (0, Common_Movement_ExclamationMark)
+	waitmovement (0)
+    msgbox(format("Woah! I didn't even hear you come in. Hmm... you don't look like one of Sam's thugs... and you've got this heavy air about you. Do me a favor, go through that passage and talk to Leader Holly. Just don't mention that you found me distracted by the TV, okay?"))
+    waitmessage
+    releaseall
+    end
+}

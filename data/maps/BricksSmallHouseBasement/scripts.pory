@@ -1,0 +1,39 @@
+mapscripts BricksSmallHouseBasement_MapScripts {}
+
+script TriggerHolly{
+if (var(VAR_UNUSED_0x40A1) != 0) {
+end}
+if (var(VAR_UNUSED_0x40A1) == 0) {
+     goto (HollyBattle)}
+}
+
+script HollyBattle{
+lockall
+applymovement(1,HollyFaceUp)
+waitmovement(1)
+msgbox(format("Hey! Who are you?? How did you get past that girl upstairs? ...\p...\p...\pI see. So she let you pass because she saw potential in you. Very well. I shall test you myself, if you are ready."))
+waitmessage
+applymovement(1,HollyToPlayer)
+waitmovement(1)
+message("Are you ready?")
+            trainerbattle_single(TRAINER_GABRIELLE_1, "Let me see what you've got.",
+ "Incredible...", HollyPostBattle)
+}
+
+script HollyPostBattle{
+msgbox(format("Amazing! You're just what I needed! I was kicked out of my Gym by the new Leader, Sam, so that he could acquire the political standing necessary to bring his company here to The Bricks to begin work on renovating the District. Now, people are losing their homes and his thugs are trashing my town! I've been in hiding ever since, so I'm stuck down here. But with your help we can start to retake The Bricks! Our first mission is simple, we need to get you into the Gym and use you as a show of force against Sam. All we need is for that goon blocking the front door to be drawn somewhere else. The rest of them usually hang out in the Flower Shop during the day since its one of the few buildings around here with air conditioning. Maybe you could stir up some trouble there and see what happens?"))
+waitmessage
+setflag (FLAG_UNUSED_0x279)
+setvar(VAR_UNUSED_0x40A1, 1)
+releaseall
+end
+}
+
+movement HollyFaceUp{
+    face_up
+}
+
+movement HollyToPlayer{
+    walk_left
+    acro_wheelie_hop_face_up
+}

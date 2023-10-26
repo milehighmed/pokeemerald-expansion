@@ -1,0 +1,115 @@
+{
+  "id": "MAP_VERDEVILLE",
+  "name": "Verdeville",
+  "layout": "LAYOUT_VERDEVILLE",
+  "music": "MUS_PETALBURG",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NEW_MAP1",
+      "offset": 12,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 20,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VerdeGirl1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 32,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BeauxBlock",
+      "flag": "FLAG_WONDER_CARD_UNUSED_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 32,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_BEAUXS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_VERDE_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_VERDE_HOUSE4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VERDE_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_VERDE_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_VERDEVILLE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "VerdevilleSign"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "BeauxSign"
+    }
+  ]
+}

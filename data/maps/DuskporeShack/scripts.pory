@@ -1,0 +1,35 @@
+mapscripts DuskporeShack_MapScripts {}
+
+script DuskporeGhostBattle{
+    lockall
+    fadescreen(FADE_TO_BLACK)
+    msgbox(format("...tik\p...tik\p...tik\p...tik\p"))
+    waitmessage
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("The air goes cold and heavy around you!"))
+    waitmessage
+    trainerbattle_single(TRAINER_TIANA,"...tik", "...tok", DuskporePostBattle)
+
+}
+
+script DuskporePostBattle{
+    fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+    setflag (FLAG_UNUSED_0x266)
+    msgbox(format("You feel a chill run down your spine as warmth returns to the space around you"))
+	waitmessage
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+	releaseall
+	end
+}
+
+script DuskporeShackItem{
+    lockall
+	giveitem (ITEM_METRONOME,1)
+            removeobject(2)
+            setflag(FLAG_UNUSED_0x267)
+	waitmessage
+releaseall
+end	
+}

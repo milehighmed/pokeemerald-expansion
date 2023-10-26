@@ -1,0 +1,13 @@
+mapscripts Route14E_MapScripts {}
+
+script BeachBattle1{
+    trainerbattle_single(TRAINER_MARIA_1,"If you keep moving the hot sand\nisn't so bad!", "I got burned!")
+    releaseall
+    end
+}
+
+script BeachBattle2{
+    trainerbattle_single(TRAINER_NED, "Beware poison types in the water!", "Ouch! I got stung!")
+    releaseall
+    end
+}

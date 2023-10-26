@@ -1,0 +1,48 @@
+mapscripts HornHollowBeach_MapScripts {}
+
+script BeachBattle{
+lockall
+msgbox(format("Grunt: This Poochyena won't leave me alone!"))
+waitmessage
+msgbox(format("Woman: I don't care! It's going to blow our cover. Catch it in a Pokéball or something!"))
+waitmessage
+msgbox(format("Grunt: I tried already, it's a trainer's! I can't catch it."))
+waitmessage
+msgbox(format("Woman: Fine. Knock it out and we'll proceed with the mission."))
+waitmessage
+applymovement(1, FacePlayer)
+applymovement(1, PlayerExclamation)
+waitmovement (1)
+msgbox(format("Hey! It's you, from the dock! I won't let you embarrass me again!"))
+waitmessage
+trainerbattle_single(TRAINER_GRUNT_WEATHER_INST_1, "Feel the might of the Shadow\n Net Syndicate!",
+ "Not in front of Ana!", BeachBattleSNS)
+}
+script BeachBattleSNS{
+msgbox(format("Woman: Out of my way, let me handle this!")) 
+waitmessage
+applymovement(4,FacePlayer)
+waitmovement(4)
+trainerbattle_single(TRAINER_GRUNT_WEATHER_INST_2, "Sorry for the cold shoulder!", "You melted right through...", 
+SNSBeachBattle1)
+}
+script SNSBeachBattle1 {
+msgbox(format("Woman: Tch! Whatever. We didn't need to meet with the leaders here anyways. It was just going to be a bonus. A courtesy, even. To let them know what's coming. You'll see, you'll all see. Lush Valley is going to wish it started stockpiling supplies a lot earlier..."))
+waitmessage
+fadescreen(FADE_TO_BLACK)
+msgbox(format("The Shadow Net Syndicate members climb onto the Lapras' back and head back out to sea. Once they are out of eyesight, Poochyena runs back towards Route 25."))
+waitmessage
+removeobject(1)
+removeobject(2)
+removeobject(3)
+removeobject(4)
+setflag (FLAG_WONDER_CARD_UNUSED_14)
+setflag (FLAG_WONDER_CARD_UNUSED_5)
+fadescreen(FADE_FROM_BLACK)
+releaseall
+end
+}
+
+movement FacePlayer{
+    face_player
+}

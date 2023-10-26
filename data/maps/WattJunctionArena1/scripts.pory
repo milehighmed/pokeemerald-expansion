@@ -1,0 +1,7 @@
+mapscripts WattJunctionArena1_MapScripts {}
+
+script WJTrainer1 {
+    trainerbattle_single(TRAINER_JOSEPH, "Resistance is futile!", "Get it? \nResistance?\p Whatever...")
+    releaseall
+    end
+}

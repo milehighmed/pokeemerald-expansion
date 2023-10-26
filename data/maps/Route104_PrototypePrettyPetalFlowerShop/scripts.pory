@@ -1,5 +1,54 @@
-raw `
-Route104_PrototypePrettyPetalFlowerShop_MapScripts::
-	.byte 0
+mapscripts Route104_PrototypePrettyPetalFlowerShop_MapScripts{}
 
-`
+script Bricks_BerryVendor {
+    lock
+    faceplayer
+    message("Want to buy some berries?")
+    waitmessage
+    pokemart(FlowerShop_Berries)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+script ThugBattle1{
+	trainerbattle_single(TRAINER_TAKAO,"Can't you see we're busy?", "Do you know who we are?", Thug1Loss)
+}
+
+script ThugBattle2{
+	trainerbattle_single(TRAINER_HITOSHI,"Hey, beat it!", "Not in front of the\nflower girl!", ThugRetreat)
+}
+
+script Thug1Loss{
+	lockall
+	faceplayer
+	msgbox(format("Leader Sam is gonna hear about this!"))
+	releaseall
+	end
+}
+
+script ThugRetreat{
+	msgbox(format("If you show your face at the Gym, Sam is gonna make you pay!"))
+	waitmessage
+    fadescreen(FADE_TO_BLACK)
+    removeobject (2)
+	removeobject (3)
+    setflag (FLAG_UNUSED_0x280)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Thank you so much for getting rid of them! Now I can start selling my berries again!"))
+    waitmessage
+	releaseall
+	end
+
+}
+raw`
+.align 2
+FlowerShop_Berries:
+	.2byte ITEM_ORAN_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_RAWST_BERRY
+	.2byte ITEM_NONE
+	release
+	end

@@ -1,0 +1,28 @@
+mapscripts OfficeBuilding1FirstFloor_MapScripts {}
+
+script WJMan{
+    lockall
+    faceplayer
+    msgbox(format("We just moved here!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJLady{
+    lockall
+    faceplayer
+    msgbox(format("I'm an artist, but ever since we moved here I've had trouble finding my muse."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJLadyItem{
+    lockall
+    giveitem(ITEM_CHARCOAL)
+    removeobject (1)
+    setflag(FLAG_UNUSED_0x270)
+    releaseall
+    end
+}

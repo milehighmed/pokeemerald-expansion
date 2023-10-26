@@ -1,0 +1,7 @@
+mapscripts PowerPlantInteriorR_MapScripts {}
+
+script PowerPlantSNSGrunt3{
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4, "We need this power!", "Out of time.")
+    releaseall
+    end
+}

@@ -1,0 +1,28 @@
+mapscripts Route15N_MapScripts {}
+
+script Route15N_Item{
+    lockall
+    giveitem(ITEM_GYARADOSITE,1)
+    removeobject(3)
+    setflag(FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_1)
+    releaseall
+    end
+}
+
+script Route15N_Tuber{
+    trainerbattle_single(TRAINER_RICKY_1, "The sand is so hot!", "I should swim...")
+    releaseall
+    end
+}
+
+script Route15N_Fisher1{
+    trainerbattle_single(TRAINER_IVAN, "The fish are biting!", "You scared them off!")
+    releaseall
+    end
+}
+
+script Route15N_Fisher2{
+    trainerbattle_single(TRAINER_CLAUDE, "I'm a traveling fisherman!", "I should've stayed home.")
+    releaseall
+    end
+}

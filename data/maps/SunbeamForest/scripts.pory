@@ -1,0 +1,51 @@
+mapscripts SunbeamForest_MapScripts {}
+
+script CelebiBattle{
+    clearflag (FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1)
+	lockall
+	faceplayer
+	playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+    delay (40)
+	waitmoncry
+    setwildbattle(SPECIES_CELEBI, 25)
+    dowildbattle
+    fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+    setflag (FLAG_RECEIVED_CONTEST_PASS )
+	fadescreen(FADE_FROM_BLACK)
+    msgbox(format ("That was Celebi, the nature spirit. It has the power to travel through time, and thus wanders from one age to the next."))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerExclamation)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(2, BeauxDown)
+    msgbox(format("It has appeared to me before, but never like that. It appears to have deemed you worthy. How interesting. I came here to commune with it and to seek its aid, but it seems as if I was meant to find you instead. Come find me at Verdeville when you're ready"))
+	waitmessage
+    applymovement(2,BeauxUp)
+    setflag(FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1)
+    clearflag(FLAG_WONDER_CARD_UNUSED_2)
+    setflag(FLAG_WONDER_CARD_UNUSED_3)
+    removeobject (2)
+    releaseall
+	end
+}
+
+movement BeauxDown{ 
+walk_down
+walk_down
+walk_down
+walk_down
+walk_down
+walk_down
+walk_down
+}
+
+movement BeauxUp{
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+}

@@ -1,0 +1,73 @@
+{
+  "id": "MAP_SUNBEAM_FOREST",
+  "name": "SunbeamForest",
+  "layout": "LAYOUT_SUNBEAM_FOREST",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "x": 28,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelebiBattle",
+      "flag": "FLAG_RECEIVED_CONTEST_PASS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 10,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelebiBattle",
+      "flag": "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_SUNBEAM_ENTRY_L",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_SUNBEAM_ENTRY_L",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_SUNBEAM_CAVE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

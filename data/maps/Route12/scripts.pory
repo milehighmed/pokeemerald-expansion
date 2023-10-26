@@ -64,3 +64,22 @@ releaseall
 end		
 
 }
+
+script OldRod{
+    lockall
+    faceplayer
+    if(!(flag(FLAG_RECEIVED_OLD_ROD))){
+    msgbox(format("I can't catch anything good with this Old Rod! You take it!"))
+    waitmessage
+    giveitem (ITEM_OLD_ROD, 1)
+    setflag (FLAG_RECEIVED_OLD_ROD)
+    
+}
+else{
+   msgbox(format("I hope you have better luck with it than I did!"))
+waitmessage
+releaseall
+end
+
+}
+}

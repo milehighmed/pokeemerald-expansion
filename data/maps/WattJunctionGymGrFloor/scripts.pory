@@ -1,0 +1,47 @@
+mapscripts WattJunctionGymGrFloor_MapScripts {}
+
+script WJReceptionist{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to Watt Junction Power Company. Leader Niko is currently accepting challengers on a walk-in basis. Don't be surprised if he isn't happy about the intrusion though..."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJCamper{
+    lockall
+    faceplayer
+    msgbox(format("Niko wiped the floor with my team! I should've brought more than just the Ground types I found in Darkspore Tunnel."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJGymBoy{
+    lockall
+    faceplayer
+    msgbox(format("I'm so nervous, I can't even stand! Let alone walk up all those stairs..."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJSponsor{
+    lockall
+    faceplayer
+     msgbox(format("Hey! Glad you made it Champ-In-The-Making! Quick word of advice, Niko's battle style revolves around pivoting his members of his team in and out of battle, so that he always has the best match-up possible! If you want to come out on top, you'll need to have an answer to his switches ready to go! Ground types will help, but they won't win you this battle all on their own!"))
+    if(!(flag(FLAG_UNUSED_0x4DA))){
+    msgbox(format("Here, stay hydrated!"))
+    waitmessage
+    giveitem (ITEM_FRESH_WATER, 1)
+    setflag (FLAG_UNUSED_0x4DA)
+    
+}
+else{
+   msgbox(format("Hey! Glad you made it Champ-In-The-Making! Quick word of advice, Niko's battle style revolves around pivoting his members of his team in and out of battle, so that he always has the best match-up possible! If you want to come out on top, you'll need to have an answer to his switches ready to go! Ground types will help, but they won't win you this battle all on their own!"))
+}
+waitmessage
+releaseall
+end
+}

@@ -1,0 +1,29 @@
+mapscripts WattJunctionGymStairwell1_MapScripts {}
+
+script WJQuestion1{
+    lockall
+    msgbox(format("Question 1: Which Pokémon CANNOT be found outside of the Power Plant?"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJBlitzle{
+    lockall
+    showmonpic(SPECIES_BLITZLE, 10, 3)
+    msgbox(format("BLITZLE"))
+    waitmessage
+    hidemonpic
+    releaseall
+    end
+}
+
+script WJVoltorb{
+    lockall
+    showmonpic(SPECIES_VOLTORB, 10,3)
+    msgbox(format("VOLTORB"))
+    waitmessage
+    hidemonpic
+    releaseall
+    end
+}

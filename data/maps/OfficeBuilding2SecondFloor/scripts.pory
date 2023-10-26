@@ -1,0 +1,37 @@
+mapscripts OfficeBuilding2SecondFloor_MapScripts {}
+
+script WJCardplayer1 {
+lockall
+faceplayer
+msgbox(format("We're playing the Pokémon Card Game. It's been hard to build decks ever since they stopped selling booster packs at the Mart. Too many people would just steal them..."))
+waitmessage
+releaseall
+end
+}
+
+script WJCardplayer2{
+lockall
+faceplayer
+msgbox(format("Don't tell my friend over there, but I got caught stealing cards at the Mart. Now they don't even sell cards anymore! On the plus side, my deck is better than his, so I should be able to keep this winning streak going for awhile."))
+waitmessage
+releaseall
+end
+}
+script WJCardplayer3{
+lockall
+faceplayer
+msgbox(format("I used to love playing trading card games, but boys were always flirting with me! I didn't like feeling like they were always letting me win."))
+waitmessage
+releaseall
+end
+}
+
+script WJCardItem{
+    lockall
+    giveitem(ITEM_TM46)
+    removeobject(1)
+    setflag(FLAG_UNUSED_0x272)
+    releaseall
+    end
+
+}

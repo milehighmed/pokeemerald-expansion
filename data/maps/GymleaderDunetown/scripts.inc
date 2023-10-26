@@ -34,6 +34,7 @@ Dunetown_Victory::
 	msgbox Dunetown_Victory_Text_1
 	call Common_EventScript_PlayGymBadgeFanfare
 	setvar VAR_UNUSED_0x408B, 1
+	setflag FLAG_UNUSED_0x273
 	releaseall
 	end
 

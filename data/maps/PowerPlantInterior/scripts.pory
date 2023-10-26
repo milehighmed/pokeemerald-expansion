@@ -1,0 +1,70 @@
+mapscripts PowerPlantInterior_MapScripts {}
+
+script PowerPlantSNSLt{
+    trainerbattle_double(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, "You're too late! I've already filled\n all of the batteries. We got what\p
+    we needed but I can still show\n off a little on our way out!","I won't forget this!",
+    "Seems like you're too weak right\nnow.\p Go heal up or something\n and come back.", PowerPlantRetreat )
+    releaseall
+    end
+}
+
+script PowerPlantRetreat{
+    msgbox(format("Grunts, let's go!"))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    removeobject (1)
+    removeobject(2)
+	removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    clearflag (FLAG_UNUSED_0x274)
+    setflag (FLAG_UNUSED_0x273)
+    setvar(VAR_UNUSED_0x40FC, 0)
+	fadescreen(FADE_FROM_BLACK)
+    waitmessage
+	releaseall
+	end
+}
+
+script PowerPlantInteriorGuard{
+    lockall
+    faceplayer
+    msgbox(format("These thugs came out of nowhere! That one up at the generator is siphoning power to fill some sort of batteries! They already drove all of the workers off, please help me!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantZigGrunt{
+    lockall
+    faceplayer
+    msgbox(format("Don't even try it! I might be tied up with this guard right now, but you better believe that there's more than enough Syndicate members here to deal with you if you decide to intervene!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantZigfight{
+    lockall
+    msgbox(format("The Zigzagoon and Poochyena are battling viciously. Trying to get between them could get you seriously hurt."))
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantSNSGrunt1{
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, "Go no further!", "Fine, go a little\n further.")
+    releaseall
+    end
+}
+
+script PowerPlantSNSGrunt2{
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, "I've grown stronger since\n the cave!", "But so have you...")
+    releaseall
+    end    
+}
+
+
+

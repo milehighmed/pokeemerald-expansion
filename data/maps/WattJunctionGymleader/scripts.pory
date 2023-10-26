@@ -1,0 +1,76 @@
+mapscripts WattJunctionGymleader_MapScripts {}
+
+script Leader_Niko{
+    lockall
+    if (var(VAR_UNUSED_0x409B) == 0) {
+    goto (Leader_NikoBattle)}
+else {
+    msgbox(format("Can't you see I'm busy? Get out there and continue on your journey!"))
+    releaseall
+    end
+}
+}
+
+script Leader_NikoBattle{
+    lockall
+    faceplayer
+    msgbox(format("Not another Trainer! I can't get anything done around here with all of you coming to challenge me. I even set up that trivia stuff in the stairwells to try to slow you down... This job is turning out to be more trouble than it's worth. Whatever, I'll just channel my frustration through battle! Come at me!"))
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, "I'll show you why\nI'm the boss!", "Yeesh. Looking for a job?", WJ_Victory)
+    releaseall
+    end
+}
+
+script WJ_Victory {
+    lockall
+    setflag(FLAG_BADGE02_GET)
+    msgbox(format("Here, you've earned these."))
+    waitmessage
+    giveitem (ITEM_TM51, 1)
+    waitfanfare
+    msgbox(format("You got the Ohm Badge! Pokémon up to Level 30 will obey you."))
+    call (Common_EventScript_PlayGymBadgeFanfare)
+    setvar(VAR_UNUSED_0x409B,1)
+    setflag(FLAG_UNUSED_0x274)
+    clearflag(FLAG_UNUSED_0x273)
+    setvar(VAR_UNUSED_0x40FC, 1)
+    msgbox(format("Before you move on, you should see about getting yourself a Pokémon that can learn Interface. I've added Power Plant access onto your PassID, that's a good place to look. Remember, Interface is a manmade technique, so not very many Pokémon can learn it, and not all Electric types can learn it either. Manmade Pokémon, like Porygon, and Machine-like Pokémon like Voltorb can learn it no problem."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJWorker1{
+    lockall
+    faceplayer
+    msgbox(format("Are you crazy! Mr. Niko is right there, don't bother me while I'm working!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJWorker2{
+lockall
+    faceplayer
+    msgbox(format("Please leave me alone, I have a lot to get done."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJWorker3{
+lockall
+    faceplayer
+    msgbox(format("I don't know what to tell you, I'm not a trainer. I just work here."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJWorker4{
+lockall
+    faceplayer
+    msgbox(format("Prepare to battle! Haha, just kidding. I don't get paid enough to battle."))
+    waitmessage
+    releaseall
+    end
+}

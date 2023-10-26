@@ -1,0 +1,8 @@
+mapscripts HoneyportSouth_MapScripts {}
+
+script BoatToLakeLoral{
+msgbox(format("Let's set sail for Loral Resort!"))
+warp(MAP_LAKE_LORAL, [0])
+releaseall
+end
+}

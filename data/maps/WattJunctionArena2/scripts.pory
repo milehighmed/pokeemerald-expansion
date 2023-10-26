@@ -1,0 +1,7 @@
+mapscripts WattJunctionArena2_MapScripts {}
+
+script WJTrainer2{
+    trainerbattle_single(TRAINER_KIRK, "Let's up the amplitude!", "Way to ride the waveform!")
+    releaseall
+    end
+}

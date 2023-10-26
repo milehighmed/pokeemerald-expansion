@@ -1,0 +1,43 @@
+mapscripts VerdeHouse3_MapScripts {}
+
+script VerdeRiolu {
+    lockall
+    if(!(flag(FLAG_UNUSED_0x1DE))){
+    showmonpic(SPECIES_RIOLU, 10, 3)
+    msgbox("Will you let Riolu join you?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_RIOLU, 20, ITEM_SOOTHE_BELL)}
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("You received Riolu! A strong desire emanates from its Pokéball. You feel as if it wants to search for its original owner!"))
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x1DE)
+
+            call(NicknamePartyMon)
+    }
+    if(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+        playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("You received Riolu! A strong desire emanates from its Pokéball. You feel as if it wants to search for its original owner! Riolu was sent to the PC."))
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x1DE)
+
+            call(NicknamePartyMon)//fix this!!!!
+    }
+    
+}
+else{
+    hidemonpic
+    msgbox("What if the trainer comes back for it?")
+}
+waitmessage
+releaseall
+end
+}
+
+script VerdeDiary{
+    lockall
+    msgbox(format("I had that dream again, about the shack in Darkspore Forest. From there, I flew up into the air, all the way to Silver City. All the way to a building I had never seen before. I walked right in, and went up to the thirteenth floor. The elevator doors opened, and I felt the air around me become heavy. Then I woke up. I must know what's there! I'm leaving in the morning. I'm leaving Riolu behind, it's too dangerous for it to come along. I only hope that the rest of my Pokémon are safe with me, I have a feeling I'll need them."))
+    waitmessage
+    releaseall
+    end
+}

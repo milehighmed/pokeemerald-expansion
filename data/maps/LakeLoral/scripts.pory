@@ -1,0 +1,56 @@
+mapscripts LakeLoral_MapScripts {}
+
+script BoatToHoneyport{
+msgbox(format("Let's set sail for Honeyport!"))
+warp(MAP_HONEYPORT_SOUTH, [0])
+releaseall
+end
+}
+
+script SaveCaptain{
+    if(!(flag(FLAG_MOSSDEEP_GYM_SWITCH_1))){
+    lockall
+    setflag(FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1)
+    setflag(FLAG_WONDER_CARD_UNUSED_2)
+    setflag(FLAG_WONDER_CARD_UNUSED_16)
+    msgbox(format("Captain: No! I refuse."))
+      waitmessage
+    applymovement (4, PlayerExclamation)
+    msgbox(format("SNS Grunt: Refuse? You can't refuse! You have a responsibility to take people across the lake to Lush Valley. You've never turned me down before. Why now?"))
+      waitmessage
+    msgbox(format("Captain: Because. Leader Ross is there negotiating with the leaders of Lush Valley right now. He forbade me from ferrying you and your group across!"))
+      waitmessage
+    msgbox(format("SNS Grunt: I don't think you understand. This isn't a request. You WILL take my Lieutenant and I to Honeyport."))
+      waitmessage
+    applymovement (OBJ_EVENT_ID_PLAYER, PlayerExclamation)
+    msgbox(format("Captain: You there! Trainer! Help me!"))
+    waitmessage
+    trainerbattle_single(TRAINER_GRUNT_RUSTURF_TUNNEL, "Don't get it in my way!", "What's the Lt. gonna say?", CaptainSaved)
+    }
+    else{
+        end
+    }
+}
+
+script CaptainSaved{
+    msgbox(format("SNS Grunt: You haven't stopped anything. We can find another boat, just you watch!"))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+	removeobject(4)
+    setflag (FLAG_MOSSDEEP_GYM_SWITCH_1)
+    setvar(VAR_CURRENT_SECRET_BASE,1)
+	fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    msgbox(format("Captain: Thank you for your help. If you ever want to sail to the other side of the lake, let me know. I owe you!"))
+	waitmessage
+    releaseall
+	end
+}
+
+script LoralGymDude{
+  lockall
+  faceplayer
+  msgbox(format("Woah there! Leader Ross has the Gym closed right now. He's got some important business to attend to, come back later!"))
+  releaseall
+  end
+}

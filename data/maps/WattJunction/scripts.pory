@@ -1,0 +1,85 @@
+mapscripts WattJunction_MapScripts {}
+
+script WJGentleman{
+    lockall
+    faceplayer
+    msgbox(format("Can't you see I'm in a hurry! What? To where? Hah! Shows what you know. The most important part of being busy is LOOKING busy!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJOldLady{
+    lockall
+    faceplayer
+    msgbox(format("When I was a young girl I let my pet Wooper free into the water by the Power Plant, thinking it would swim downstream and find somewhere nice to live. Imagine my surprise when I found out that Wooper thrive there now! Their damp, squishy body and Ground typing allows them to eat Electric types! Now the Nova City Bureau of Wildlife Management is calling them an invasive species... Can Pokémon even be an invasive species...?"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJGirl{
+    lockall
+    faceplayer
+    msgbox(format("My older sister's boyfriend broke up with her, so she cut all her hair off and left town to start her own Pokémon journey."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJWoman{
+    lockall
+    faceplayer
+    msgbox(format("I've lived in Watt Junction all of my life! It perfectly suits my busy personality."))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJBoy{
+    lockall
+    faceplayer
+    msgbox(format("I want to go on a journey, but I don't have a Pokémon of my own and the ones around here are too strong to catch without weakening them first!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJGymSign{
+    lockall
+    msgbox(format("Watt Junction Power Company: Home of Niko, the Electric Leader"))
+    waitmessage
+    releaseall
+    end
+}
+
+script Route15Guard {
+    lockall
+    faceplayer
+    msgbox(format("I check PassIDs."))
+    releaseall
+    end
+}
+
+
+script Route15_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_BADGE02_GET, Route15_Stop )
+    msgbox(format("STOP! You haven't been authorized by Leader Niko to leave Watt Junction."))
+    applymovement(OBJ_EVENT_ID_PLAYER, Route15_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script Route15_Stop {
+    msgbox(format("Hold on. I need to check your PassID...\n...\p...\p...\pAlright, go ahead."))
+    waitmessage
+    releaseall
+    end
+}
+
+script Route15_GoBack{
+    walk_down
+}

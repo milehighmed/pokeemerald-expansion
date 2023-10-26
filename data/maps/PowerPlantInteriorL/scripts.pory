@@ -1,0 +1,17 @@
+mapscripts PowerPlantInteriorL_MapScripts {}
+
+script PowerPlantItemL {
+    lockall
+    giveitem(ITEM_TM34,1)
+    removeobject(2)
+    setflag(FLAG_UNUSED_0x276)
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantSNSGrunt4{
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_4, "I'm the strongest grunt here!", "Like it mattered...")
+    releaseall
+    end
+}

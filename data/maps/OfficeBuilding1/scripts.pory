@@ -1,0 +1,10 @@
+mapscripts OfficeBuilding1_MapScripts {}
+
+script WJOldMan {
+    lockall
+    faceplayer
+    msgbox(format("I remember when they built these tall buildings. I was the first to move in!"))
+    waitmessage
+    releaseall
+    end
+}

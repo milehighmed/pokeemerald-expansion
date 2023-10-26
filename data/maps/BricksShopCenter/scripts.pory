@@ -1,0 +1,30 @@
+mapscripts BricksShopCenter_MapScripts {}
+
+script BricksMerchant1{
+    lock
+    faceplayer
+    msgbox(format("I'm an exotic stone merchant. What can I get for you?"))
+    waitmessage
+    pokemart(Stone_Mart)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+raw`
+
+.align 2
+Stone_Mart::
+    .align 2
+    .2byte ITEM_FIRE_STONE
+    .2byte ITEM_WATER_STONE
+    .2byte ITEM_THUNDER_STONE
+    .2byte ITEM_LEAF_STONE
+    .2byte ITEM_MOON_STONE
+    .2byte ITEM_ICE_STONE
+    .2byte ITEM_DUSK_STONE
+    .2byte ITEM_DAWN_STONE
+    .2byte ITEM_SUN_STONE
+    .2byte ITEM_NONE
+    release
+    end

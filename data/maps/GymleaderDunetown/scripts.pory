@@ -30,6 +30,7 @@ script Dunetown_Victory {
     msgbox(format("You got the Oasis Badge! Pokemon up to Level 18 will obey you."))
     call (Common_EventScript_PlayGymBadgeFanfare)
     setvar(VAR_UNUSED_0x408B,1)
+    setflag(FLAG_UNUSED_0x273)
     releaseall
     end
 }

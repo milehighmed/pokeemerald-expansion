@@ -1,0 +1,20 @@
+mapscripts BigHouse2_MapScripts {}
+
+script WJBabysitter{
+    lockall
+    faceplayer
+    msgbox(format("I couldn't beat Leader Niko, and I've already beaten all the trainers in this area, so now all I have for income is babysitting! What if I have to get a real job??"))
+    waitmessage
+    releaseall
+    end
+
+}
+
+script WJToddler{
+    lockall
+    faceplayer
+    msgbox(format("I want a Scyther!"))
+    waitmessage
+    releaseall
+    end
+}

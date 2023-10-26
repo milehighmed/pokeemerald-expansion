@@ -1,0 +1,69 @@
+mapscripts BricksGym_MapScripts {}
+
+script BricksGymSponsor{
+    lockall
+    faceplayer
+     msgbox(format("Hey! I was wondering when you'd make it in here, Champ-In-The-Making! You're actually Sam's first challenger, so information on his tactics are scarce! All I can tell you is that his team of Fighting types broke the former leader's legendary winstreak! Prepare for a tough fight!"))
+    if(!(flag(FLAG_UNUSED_0x281))){
+    msgbox(format("Here, stay hydrated!"))
+    waitmessage
+    giveitem (ITEM_SODA_POP, 1)
+    setflag (FLAG_UNUSED_0x281)
+    
+}
+else{
+   msgbox(format("Hey! I was wondering when you'd make it in here, Champ-In-The-Making! You're actually Sam's first challenger, so information on his tactics are scarce! All I can tell you is that his team of Fighting types broke the former leader's legendary winstreak! Prepare for a tough fight!"))
+}
+waitmessage
+releaseall
+end
+}
+
+script Leader_Sam{
+    lockall
+    if (var(VAR_UNUSED_0x40FF) == 0) {
+    goto (Leader_SamBattle)}
+else {
+    msgbox(format("Fly away, little bird. We'll meet again soon."))
+    releaseall
+    end
+}
+}
+
+script Leader_SamBattle{
+    lockall
+    faceplayer
+    msgbox(format("What's this? A challenger? I thought I had a man at the door just to prevent this sort of thing. Well, the rules are the rules. It was only a matter of time until I eventually had to accept a challenge."))
+    trainerbattle_single(TRAINER_WALTER_2, "I'm ready, aren't you?", "Who sent you??", Bricks_Victory)
+    releaseall
+    end
+}
+
+script Bricks_Victory {
+    lockall
+    setflag(FLAG_BADGE03_GET)
+    msgbox(format("Here, take these."))
+    waitmessage
+    giveitem (ITEM_TM53, 1)
+    giveitem (ITEM_ASSAULT_VEST,1)
+    waitfanfare
+    msgbox(format("You got the Combat Badge! Pokémon in your party are slightly faster than before."))
+    call (Common_EventScript_PlayGymBadgeFanfare)
+    setvar(VAR_UNUSED_0x40FF,1)
+    msgbox(format("Your fighting style is reminiscent of someone else that I know. You don't need to say anything, I know who you're working for. Let her know that this isn't over."))
+    waitmessage
+    releaseall
+    end
+}
+
+script BricksGymBattle1{
+trainerbattle_single(TRAINER_KIYO, "I'll avenge my brothers!", "No flair for the\ndramatic.")
+releaseall
+end
+}
+
+script BricksGymBattle2{
+trainerbattle_single(TRAINER_KOICHI,"Face my poison-style!", "I should stick to\nkarate...")
+releaseall
+end
+}

@@ -1,0 +1,80 @@
+mapscripts Route15_MapScripts {}
+
+script GoodRod{
+    lockall
+    faceplayer
+    if(!(flag(FLAG_RECEIVED_GOOD_ROD))){
+    msgbox(format("Hey, Trainer! You look you've got an eye for fishing! Here, take this. Go out and fish your heart out!"))
+    waitmessage
+    giveitem (ITEM_GOOD_ROD, 1)
+    setflag (FLAG_RECEIVED_GOOD_ROD)
+    
+}
+else{
+   msgbox(format("The Lake's the place to be!"))
+waitmessage
+releaseall
+end
+
+}
+}
+
+script Route15Camper{
+    trainerbattle_single(TRAINER_TYRON, "This is the great outdoors!", "Maybe I need to go\n farther from town...")
+    releaseall
+    end
+}
+
+script Route15Picnicker{
+    trainerbattle_single(TRAINER_AUTUMN, "Don't you love the air here?", "I choked!")
+    releaseall
+    end
+}
+
+script TrainerDessaBattle1{
+ if(!(flag(FLAG_RECEIVED_6_SODA_POP))){
+lockall
+applymovement(OBJ_EVENT_ID_PLAYER, PlayerExclamation)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+applymovement(4, DessaWalkDown)
+waitmovement(4)
+msgbox(format("Hey, Trainer! Headed up to Lake Loral Resort? Sorry to say, but you just missed the Leader. I was his last challenger before he left for Lush Valley! He sure was strong, I barely came out on top! Here, want me to check if your team is ready for the challenge?"))
+waitmessage
+trainerbattle_single(TRAINER_LEAF,"Me and my team are corn-fed!","I'm grass-finished!", DessaPostBattle)
+}
+else{
+end
+}
+}
+script DessaPostBattle{
+msgbox(format("Yup, I don't think you'll have any trouble getting through Leader Ross' Gym! You should head up to Lush Valley though if you want a real challenge! Here, I found this in a pasture back home, consider it my badge!"))
+waitmessage
+giveitem(ITEM_LUCKY_EGG)
+waitmessage
+applymovement(4,DessaWalkUp)
+waitmovement(4)
+setflag(FLAG_RECEIVED_6_SODA_POP)
+setvar(VAR_EVER_GRANDE_CITY_STATE,1)
+releaseall
+end
+}
+
+movement PlayerExclamation{
+    emote_exclamation_mark
+}
+
+movement DessaWalkDown{
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement DessaWalkUp{
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}

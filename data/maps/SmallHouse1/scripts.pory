@@ -1,0 +1,21 @@
+mapscripts SmallHouse1_MapScripts {}
+
+
+
+script WJExpertM {
+    lockall
+    faceplayer
+    msgbox(format("This Duskull followed me home one day from Darkspore Forest. I've heard that they stay near people who are close to death, but I think the little guy jumped the gun! I'm not going anywhere just yet!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJDuskull {
+    lockall
+    faceplayer
+    msgbox(format("Duskull's single red eye scans you up and down briefly before it locks back onto the Old Man."))
+    waitmessage
+    releaseall
+    end
+}

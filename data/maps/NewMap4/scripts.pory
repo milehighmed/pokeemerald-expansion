@@ -1,0 +1,9 @@
+mapscripts NewMap4_MapScripts {}
+
+script HoneyportLady1{
+    lockall
+    faceplayer
+    msgbox(format("The leaders of Verdeville and Horn Hollow are very strong! And they both believe strongly in something they call the virtue of battle! Don't feel discouraged if you can't defeat them the first time around, you may just need to change up your strategy a bit!"))
+    releaseall
+    end
+}

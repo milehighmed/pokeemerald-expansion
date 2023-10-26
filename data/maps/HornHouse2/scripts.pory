@@ -1,0 +1,52 @@
+mapscripts HornHouse2_MapScripts {}
+
+script HornZig{
+    lockall
+    faceplayer
+    msgbox(format("Zig! Zagoon!"))
+    releaseall
+    end
+}
+
+script ZigLady{
+    lockall
+    faceplayer
+    msgbox(format("For my fiftieth birthday, I decided that I wanted a Pokémon so that I could go on my own journey. But it was too hard! Now I keep my Zigzagoon as a pet, but whenever we go on walks he always picks up items from the ground. I don't know what to do with them all!"))
+    releaseall
+    end
+}
+
+script ZigBoy{
+    lockall
+    faceplayer
+    msgbox(format("Zigzagoon sometimes picks up really rare items! I've been holding onto some of them, so that I'm ready for when I'm old enough for a journey of my own."))
+    releaseall
+    end
+}
+
+script ZigItem1{
+    lockall
+    giveitem(ITEM_AMULET_COIN,1)
+    setflag(FLAG_WONDER_CARD_UNUSED_7)
+    removeobject(5)
+    releaseall
+    end
+}
+
+script ZigItem2{
+    lockall
+    giveitem(ITEM_NORMALIUM_Z,1)
+    setflag(FLAG_WONDER_CARD_UNUSED_6)
+    removeobject(4)
+    releaseall
+    end
+}
+
+script ZigItem3{
+lockall
+    giveitem(ITEM_PREMIER_BALL,1)
+    setflag(FLAG_WONDER_CARD_UNUSED_8)
+    removeobject(6)
+    releaseall
+    end
+}

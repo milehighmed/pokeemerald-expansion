@@ -1,0 +1,26 @@
+mapscripts BricksShopCenter1F_MapScripts {}
+
+script BricksMerchant2{
+    lock
+    faceplayer
+    msgbox(format("I'm a TM merchant. What can I get for you?"))
+    waitmessage
+    pokemart(BricksTM_Mart)
+    msgbox("Come again soon!")
+    release
+    end
+}
+
+raw`
+
+.align 2
+BricksTM_Mart::
+    .align 2
+    .2byte ITEM_TM09
+    .2byte ITEM_TM23
+    .2byte ITEM_TM30
+    .2byte ITEM_TM39
+    .2byte ITEM_TM47
+    .2byte ITEM_NONE
+    release
+    end

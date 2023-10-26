@@ -1,1 +1,130 @@
 mapscripts DarksporeForest_MapScripts {}
+
+script SporeSign {
+    lockall
+    msgbox(format("Darkspore Forest"))
+    waitmessage
+    releaseall
+    end
+}
+
+script SporeBugCatcher1 {
+    trainerbattle_single(TRAINER_DAVIS, "Caught in my web!","You squashed me!")
+    waitmessage
+    end
+}
+
+script SporeBugCatcher2 {
+    trainerbattle_single(TRAINER_KENT, "Invincible exoskeleton,\n go!","You broke right through!")
+    waitmessage
+    end
+}
+
+script SporeBugCatcher3{
+    trainerbattle_single(TRAINER_JAMES_1, "Scared of spiders?","You're fearless!")
+    waitmessage
+    end
+}
+
+script SporeBugCatcher4{
+    trainerbattle_single(TRAINER_RICK, "Bug-catching can be\n a lonely life.","See what I mean?")
+    waitmessage
+    end
+}
+
+script SporeCamper {
+    trainerbattle_single(TRAINER_FLINT, "This spot's pretty\n out of the way!","I guess that's for \n a reason...")
+    waitmessage
+    end
+}
+
+script SporeHexManiac1{
+    trainerbattle_single(TRAINER_LEAH, "Can you feel the\n spirits?","You've angered them!")
+    waitmessage
+    end
+}
+
+script SporeHexManiac2{
+    trainerbattle_single(TRAINER_PATRICIA, "Why do they gather\n here?","Is it because\n of you?")
+    waitmessage
+    end
+}
+
+script SporeHexManiac3{
+    trainerbattle_single(TRAINER_KINDRA, "I see dead people.","You see them too?")
+    waitmessage
+    end
+}
+
+script SporeBattleGirl{
+    trainerbattle_single(TRAINER_LAURA, "I refuse to step foot\n in that forest!","I can't stand bugs!")
+    waitmessage
+    end
+}
+
+script DarksporeItem4{
+    lockall
+	giveitem (ITEM_DUSK_STONE,1)
+            removeobject(12)
+            setflag(FLAG_UNUSED_0x26E)
+	waitmessage
+releaseall
+end	
+}
+
+script DarksporeItem1{
+    lockall
+	giveitem (ITEM_OLD_GATEAU,1)
+            removeobject(9)
+            setflag(FLAG_UNUSED_0x26F)
+	waitmessage
+releaseall
+end	
+}
+
+script DarksporeItem2{
+    lockall
+	giveitem (ITEM_DREAD_PLATE,1)
+            removeobject(10)
+            setflag(FLAG_UNUSED_0x264)
+	waitmessage
+releaseall
+end	
+}
+
+script DarksporeItem3{
+    lockall
+	giveitem (ITEM_GENGARITE,1)
+            removeobject(8)
+            setflag(FLAG_UNUSED_0x265)
+	waitmessage
+releaseall
+end	
+}
+
+script DarksporeGuard {
+    lockall
+    faceplayer
+    msgbox(format("I check PassIDs."))
+    releaseall
+    end
+}
+
+script Darkspore_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_BADGE01_GET, Darkspore_Stop )
+    msgbox(format("STOP! You haven't been authorized by Leader Mikey to leave this district."))
+    applymovement(OBJ_EVENT_ID_PLAYER, Route13_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script Darkspore_Stop {
+    msgbox(format("Hold on. I need to check your PassID...\n...\p...\p...\pAlright, go ahead."))
+    waitmessage
+    releaseall
+    end
+}
+

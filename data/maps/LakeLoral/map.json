@@ -1,0 +1,179 @@
+{
+  "id": "MAP_LAKE_LORAL",
+  "name": "LakeLoral",
+  "layout": "LAYOUT_LAKE_LORAL",
+  "music": "MUS_DEWFORD",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE14E",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE15NE",
+      "offset": -40,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_LAKE_LORAL_N",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_LOLOA_WETLANDS",
+      "offset": -40,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BoatToHoneyport",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "x": 31,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LoralGymDude",
+      "flag": "FLAG_UNUSED_0x1DF"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SaveCaptain",
+      "flag": "FLAG_MOSSDEEP_GYM_SWITCH_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_LORAL_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_LORAL_GAME_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_LORAL_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_CURRENT_SECRET_BASE",
+      "var_value": "0",
+      "script": "SaveCaptain"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_CURRENT_SECRET_BASE",
+      "var_value": "0",
+      "script": "SaveCaptain"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
+  ]
+}

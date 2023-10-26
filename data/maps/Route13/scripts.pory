@@ -1,1 +1,54 @@
 mapscripts Route13_MapScripts {}
+
+script Route13Fisherman{
+    trainerbattle_single(TRAINER_ANDREW, "Fish on!","I came all the way\n out here for shallow\n water!")
+    waitmessage
+    end
+}
+
+script Route13Item1{
+    lockall
+	giveitem (ITEM_BEEDRILLITE,1)
+            removeobject(3)
+            setflag(FLAG_UNUSED_0x26C)
+	waitmessage
+releaseall
+end	
+}
+
+script Route13Item2{
+    lockall
+    giveitem (ITEM_ANTIDOTE,1)
+        removeobject (1)
+        setflag(FLAG_UNUSED_0x26D)
+}
+
+script Route13Guard {
+    lockall
+    faceplayer
+    msgbox(format("I check PassIDs."))
+    releaseall
+    end
+}
+
+script Route13_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_BADGE01_GET, Route13_Stop )
+    msgbox(format("STOP! You haven't been authorized by Leader Mikey to leave this district."))
+    applymovement(OBJ_EVENT_ID_PLAYER, Route13_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script Route13_Stop {
+    msgbox(format("Hold on. I need to check your PassID...\n...\p...\p...\pAlright, go ahead."))
+    waitmessage
+    releaseall
+    end
+}
+
+movement Route13_GoBack {
+    walk_down
+}

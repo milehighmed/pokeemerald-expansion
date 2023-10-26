@@ -1,0 +1,97 @@
+mapscripts Route25_MapScripts {}
+
+script TrainerDessaBattle2{
+ if(!(flag(FLAG_WONDER_CARD_UNUSED_10))){
+lockall
+applymovement(OBJ_EVENT_ID_PLAYER, PlayerExclamation)
+applymovement(OBJ_EVENT_ID_PLAYER, turnright)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+applymovement(4, DessaWalkLeft)
+waitmovement(4)
+msgbox(format("Hey, Trainer! Fancy seeing you here! Me? Oh why I just had to stop at home to refresh myself before heading down to Silver City. If you haven't been yet, you really should! There's a terminal there that you need four badges to register to use, and they say that you get a really valuable Trainer Kit when you do! Say, let's have a rematch since I'm ready to go!"))
+waitmessage
+trainerbattle_single(TRAINER_RED,"Who doesn't love a rematch!","Maybe next time!", DessaPostBattle1)
+}
+else{
+end
+}
+}
+script DessaPostBattle1{
+msgbox(format("Here, my older sister is stubborn as a Mudbray. If you're going to meet her, you might end up needing this!"))
+giveitem(ITEM_TM55,1)
+waitmessage
+applymovement(8,DessaWalkRight)
+waitmovement(8)
+removeobject(8)
+setflag(FLAG_WONDER_CARD_UNUSED_10)
+setvar(VAR_ROUTE102_STATE ,1)
+releaseall
+end
+}
+
+movement turnright{
+    face_right
+}
+
+movement DessaWalkLeft{
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement DessaWalkRight{
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+script Breeder1{
+    trainerbattle_single(TRAINER_ISAAC_1, "I worked hard to raise these Pokémon!", "I won't give up on them!")
+    releaseall
+    end
+}
+
+script Breeder2{
+    trainerbattle_single(TRAINER_ISAAC_2, "I love working out in the sunshine!", "I should get back to it!")
+    releaseall
+    end
+}
+
+script Breeder3{
+    trainerbattle_single(TRAINER_LYDIA_1, "I raise the cutest Pokémon!", "Yours are cute too!")
+    releaseall
+    end
+}
+
+script Breeder4{
+    trainerbattle_single(TRAINER_LYDIA_2, "Strong Pokémon, soft Pokémon!", "My perfect combination...")
+    releaseall
+    end
+}
+
+script Route25Item1{
+    lockall
+    giveitem(ITEM_GROUNDIUM_Z, 1)
+    removeobject(7)
+    setflag(FLAG_WONDER_CARD_UNUSED_12)
+    releaseall
+    end
+}
+
+script Route25Item2{
+    lockall
+    giveitem(ITEM_AMPHAROSITE, 1)
+    removeobject(6)
+    setflag(FLAG_WONDER_CARD_UNUSED_13)
+    releaseall
+    end
+}

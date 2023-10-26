@@ -1060,6 +1060,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
+
 	.include "data/maps/DesolateOutskirts/scripts.inc"
 
 	.include "data/maps/DesolateCheckpoint/scripts.inc"
@@ -1117,3 +1118,191 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GymleaderDunetown/scripts.inc"
 
 	.include "data/maps/DarksporeForest/scripts.inc"
+
+	.include "data/maps/DarksporeTunnel/scripts.inc"
+
+	.include "data/maps/Route13House/scripts.inc"
+
+	.include "data/maps/DuskporeShack/scripts.inc"
+
+	.include "data/maps/WattJunctionRoad/scripts.inc"
+
+	.include "data/maps/WattJunction/scripts.inc"
+
+	.include "data/maps/WattJunctionPokecenter/scripts.inc"
+
+	.include "data/maps/WattJunctionPokemart/scripts.inc"
+
+	.include "data/maps/WattJunctionGym1F/scripts.inc"
+
+	.include "data/maps/WattJunctionGymGrFloor/scripts.inc"
+
+	.include "data/maps/WattJunctionGymStairwell1/scripts.inc"
+
+	.include "data/maps/WattJunctionGymLobby/scripts.inc"
+
+	.include "data/maps/TheBricks/scripts.inc"
+
+	.include "data/maps/BricksTunnel/scripts.inc"
+
+	.include "data/maps/WattJunctionPowerPlant/scripts.inc"
+
+	.include "data/maps/WattJunctionArena1/scripts.inc"
+
+	.include "data/maps/WattJunctionGymStairwell2/scripts.inc"
+
+	.include "data/maps/WattJunctionGymStairwell3/scripts.inc"
+
+	.include "data/maps/WattJunctionGymleader/scripts.inc"
+
+	.include "data/maps/WattJunctionArena2/scripts.inc"
+
+	.include "data/maps/WattJunctionArena3/scripts.inc"
+
+	.include "data/maps/SmallHouse1/scripts.inc"
+
+	.include "data/maps/SmallHouse2/scripts.inc"
+
+	.include "data/maps/BigHouse1/scripts.inc"
+
+	.include "data/maps/BigHouse2/scripts.inc"
+
+	.include "data/maps/BigHouse3/scripts.inc"
+
+	.include "data/maps/OfficeBuilding1/scripts.inc"
+
+	.include "data/maps/OfficeBuilding1FirstFloor/scripts.inc"
+
+	.include "data/maps/OfficeBuilding1SecondFloor/scripts.inc"
+
+	.include "data/maps/OfficeBuilding2/scripts.inc"
+
+	.include "data/maps/OfficeBuilding2FirstFloor/scripts.inc"
+
+	.include "data/maps/OfficeBuilding2SecondFloor/scripts.inc"
+
+	.include "data/maps/PowerPlantInterior/scripts.inc"
+
+	.include "data/maps/PowerPlantInteriorL/scripts.inc"
+
+	.include "data/maps/PowerPlantInteriorR/scripts.inc"
+
+	.include "data/maps/GloamTunnel/scripts.inc"
+
+	.include "data/maps/Route14/scripts.inc"
+
+	.include "data/maps/BricksPokecenter/scripts.inc"
+
+	.include "data/maps/BricksPokemart/scripts.inc"
+
+	.include "data/maps/BricksSmallHouse/scripts.inc"
+
+	.include "data/maps/BricksSmallHouseBasement/scripts.inc"
+
+	.include "data/maps/Route15/scripts.inc"
+
+	.include "data/maps/BricksGym/scripts.inc"
+
+	.include "data/maps/BricksNiceHouse/scripts.inc"
+
+	.include "data/maps/Route15N/scripts.inc"
+
+	.include "data/maps/Route14E/scripts.inc"
+
+	.include "data/maps/Route15NE/scripts.inc"
+
+	.include "data/maps/LakeLoral/scripts.inc"
+
+	.include "data/maps/LakeLoralN/scripts.inc"
+
+	.include "data/maps/HoneyportSouth/scripts.inc"
+
+	.include "data/maps/Honeyport/scripts.inc"
+
+	.include "data/maps/WJTerminal/scripts.inc"
+
+	.include "data/maps/LakeLoralPokecenter/scripts.inc"
+
+	.include "data/maps/LakeLoralPokemart/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/SunbeamEntryL/scripts.inc"
+
+	.include "data/maps/Verdeville/scripts.inc"
+
+	.include "data/maps/SunbeamForest/scripts.inc"
+
+	.include "data/maps/TownHall/scripts.inc"
+
+	.include "data/maps/LushValleyPokemart/scripts.inc"
+
+	.include "data/maps/SunbeamCave/scripts.inc"
+
+	.include "data/maps/BeauxsHouse/scripts.inc"
+
+	.include "data/maps/VerdeHouse1/scripts.inc"
+
+	.include "data/maps/Route25/scripts.inc"
+
+	.include "data/maps/HornHollowBeach/scripts.inc"
+
+	.include "data/maps/HornHollow/scripts.inc"
+
+	.include "data/maps/Route16/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/BricksShopCenter/scripts.inc"
+
+	.include "data/maps/BricksShopCenter1F/scripts.inc"
+
+	.include "data/maps/NewMap3/scripts.inc"
+
+	.include "data/maps/VerdeHouse2/scripts.inc"
+
+	.include "data/maps/HornHealer/scripts.inc"
+
+	.include "data/maps/HornHouse1/scripts.inc"
+
+	.include "data/maps/HornHouse2/scripts.inc"
+
+	.include "data/maps/MyrasShed/scripts.inc"
+
+	.include "data/maps/Route25Farmhouse/scripts.inc"
+
+	.include "data/maps/Route25FarmhouseBasement/scripts.inc"
+
+	.include "data/maps/Route25FarmhouseAttic/scripts.inc"
+
+	.include "data/maps/MyrasHouse/scripts.inc"
+
+	.include "data/maps/NewMap4/scripts.inc"
+
+	.include "data/maps/HoneyportHouse1/scripts.inc"
+
+	.include "data/maps/HoneyportHouse2/scripts.inc"
+
+	.include "data/maps/VerdeHouse3/scripts.inc"
+
+	.include "data/maps/VerdeHouse4/scripts.inc"
+
+	.include "data/maps/LoralGym/scripts.inc"
+
+	.include "data/maps/Route17/scripts.inc"
+
+	.include "data/maps/LoloaWetlands/scripts.inc"
+
+	.include "data/maps/RelicQuarry/scripts.inc"
+
+	.include "data/maps/PrimordialCavern/scripts.inc"
+
+	.include "data/maps/LoralGameHouse/scripts.inc"
+
+	.include "data/maps/LakeLoralHouse1/scripts.inc"
+
+	.include "data/maps/LakeLoralHouse2/scripts.inc"
+
+	.include "data/maps/LakeLoralHouse3/scripts.inc"
+
+	.include "data/maps/BricksTerminal/scripts.inc"

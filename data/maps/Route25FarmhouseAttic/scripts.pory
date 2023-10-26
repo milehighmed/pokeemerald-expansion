@@ -1,0 +1,8 @@
+mapscripts Route25FarmhouseAttic_MapScripts {}
+
+script SleepySkitty{
+    lockall
+    msgbox(format("The Skitty is fast asleep on the rug. A sunbeam is pouring down from the window perfectly onto it. You'd better not wake it up."))
+    releaseall
+    end
+}

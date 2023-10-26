@@ -1,0 +1,21 @@
+mapscripts HornHealer_MapScripts {}
+
+script HornNurse {
+	lockall
+    faceplayer
+    msgbox(format("I'm an herbalist, and I specialize in medicinal herbs. I can help your team get back into fighting shape!"))
+    waitmessage
+	msgbox("Would you like me to heal your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+		playfanfare(MUS_HEAL)
+        msgbox("I'll be here if you need me!")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("Have a nice day", MSGBOX_NPC)
+    }
+}

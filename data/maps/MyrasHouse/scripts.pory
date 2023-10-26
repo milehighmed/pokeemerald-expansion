@@ -1,0 +1,22 @@
+mapscripts MyrasHouse_MapScripts {}
+
+script LeaderMyra{
+    lockall
+    faceplayer
+    msgbox(format("Your timing couldn't be worse, Trainer. There's a lot of work to be done and not enough time for any of it. Why have you come here?\p...\p...\p...\p I see. Leader Ross and the Mayor sent you on their behalf. Fitting that they would send a messenger, knowing full well they wouldn't be able to pass my test. Fine. I'll listen, but only if you can prove yourself through the virtue of battle!"))
+ if(!(flag(FLAG_WONDER_CARD_UNUSED_15))){
+trainerbattle_single(TRAINER_GRUNT_WEATHER_INST_3, "Let's get going!", "That power!", PostMyra)
+ }
+else{
+ msgbox(format("Even if my intuition is telling me otherwise, it is my responsibility to represent the interests of my people. That includes those of Honeyport and Verdeville. We will convene again."))
+    releaseall
+    end
+}
+}
+script PostMyra{
+    msgbox(format("Even if my intuition is telling me otherwise, it is my responsibility to represent the interests of my people. That includes those of Honeyport and Verdeville. We will convene again. In the meantime, take this. I hope it serves you well."))
+    giveitem(ITEM_TM_REST, 1)
+    setflag(FLAG_WONDER_CARD_UNUSED_15)
+    releaseall
+    end
+}

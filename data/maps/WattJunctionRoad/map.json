@@ -1,0 +1,44 @@
+{
+  "id": "MAP_WATT_JUNCTION_ROAD",
+  "name": "WattJunctionRoad",
+  "layout": "LAYOUT_WATT_JUNCTION_ROAD",
+  "music": "MUS_RUSTBORO",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE13",
+      "offset": -19,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_WATT_JUNCTION",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_WATT_JUNCTION_POWER_PLANT",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

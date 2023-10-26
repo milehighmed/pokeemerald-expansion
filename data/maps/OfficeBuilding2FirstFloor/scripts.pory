@@ -1,0 +1,10 @@
+mapscripts OfficeBuilding2FirstFloor_MapScripts {}
+
+script WJCook{
+    lockall
+    faceplayer
+    msgbox(format("I'm trying to learn how to cook for myself. I wish I had a Rotom to help me with this finicky oven!"))
+    waitmessage
+    releaseall
+    end
+}

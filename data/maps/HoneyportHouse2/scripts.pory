@@ -1,0 +1,18 @@
+mapscripts HoneyportHouse2_MapScripts {}
+
+script HoneyportItem1{
+    lockall
+    giveitem(ITEM_THROAT_SPRAY,1)
+    removeitem(2)
+    setflag(FLAG_UNUSED_0x1DA)
+    releaseall
+    end
+}
+
+script HoneyportMan1{
+    lockall
+    faceplayer
+    msgbox(format("I moved here with my girlfriend! She works on Route 25 as a Pokémon Breeder! We moved so that we could get away from the cosntant drone of Silver City. Me, I used to be the lead singer in a rock band! Now, now I don't do much of anything... But at least the air is nice here!"))
+    releaseall
+    end
+} 

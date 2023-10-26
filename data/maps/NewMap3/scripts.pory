@@ -1,0 +1,12 @@
+mapscripts NewMap3_MapScripts {}
+
+script BricksMerchant3{
+    lock
+    faceplayer
+    msgbox(format("I'm an electronics merchant. I'm not quite open yet, but please check back soon!"))
+    waitmessage
+    //pokemart(Rotom_Mart)
+    //msgbox("Come again soon!")
+    release
+    end
+}

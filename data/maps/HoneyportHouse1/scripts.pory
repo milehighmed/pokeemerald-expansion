@@ -1,0 +1,17 @@
+mapscripts HoneyportHouse1_MapScripts {}
+
+script HoneyportKirlia{
+    lockall
+    faceplayer
+    msgbox(format("Kirlia!"))
+    releaseall
+    end
+}
+
+script HoneyportBoy1{
+    lockall
+    faceplayer
+    msgbox(format("You may have noticed that we don't have a Pokécenter here in Honeyport. There isn't one in all of Lush Valley, for that matter! Whenever Kirlia gets hurt, I go visit the healer in either Verdeville or Horn Hollow!"))
+    releaseall
+    end
+}

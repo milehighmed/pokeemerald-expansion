@@ -1,0 +1,29 @@
+mapscripts WattJunctionGymStairwell2_MapScripts {}
+
+script WJQuestion2{
+    lockall
+    msgbox(format("Question 2: Which Pokémon isn't an Electric type, but evolves into one later?"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJNosepass{
+    lockall
+    showmonpic(SPECIES_NOSEPASS, 10, 3)
+    msgbox(format("NOSEPASS"))
+    waitmessage
+    hidemonpic
+    releaseall
+    end
+}
+
+script WJGrubbin{
+    lockall
+    showmonpic(SPECIES_GRUBBIN, 10, 3)
+    msgbox(format("GRUBBIN"))
+    waitmessage
+    hidemonpic
+    releaseall
+    end
+}

@@ -1,0 +1,205 @@
+{
+  "id": "MAP_THE_BRICKS",
+  "name": "TheBricks",
+  "layout": "LAYOUT_THE_BRICKS",
+  "music": "MUS_PETALBURG",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE14",
+      "offset": 16,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE16",
+      "offset": -18,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 32,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BricksGirl",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_1",
+      "x": 37,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BricksZig",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 14,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SamThug",
+      "flag": "FLAG_UNUSED_0x280"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 26,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SamThug",
+      "flag": "FLAG_UNUSED_0x279"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 38,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BricksTrainer",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 37,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BricksKid",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
+      "x": 43,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 12,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BricksPooch",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_THE_BRICKS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_THE_BRICKS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_THE_BRICKS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_SHOP_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_NICE_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BRICKS_SMALL_HOUSE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP3",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

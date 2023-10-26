@@ -1,0 +1,36 @@
+mapscripts BricksPokecenter_MapScripts {
+MAP_SCRIPT_ON_TRANSITION: BricksPokecenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script BricksPokecenter_OnTransition {
+    setrespawn(HEAL_LOCATION_THE_BRICKS)
+    end
+} 
+
+script Nurse_Bricks{
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script Bricks_PokecenterGirl{
+    lockall
+    faceplayer
+    msgbox(format("The old Leader, Holly, was on a 100-win streak when she was challenged by the CEO of a construction company based out of Silver City. He beat her and took her seat as Leader of The Bricks. A lot has changed in a short time since then."))
+    waitmessage
+    releaseall
+    end
+}
+
+script Bricks_PokecenterBoy{
+    lockall
+    faceplayer
+    msgbox(format("My family moved here from Silver City when they heard that this town was going to boom once Leader Sam renovated it. Better get in now while it's still cheap!"))
+    waitmessage
+    releaseall
+    end
+}

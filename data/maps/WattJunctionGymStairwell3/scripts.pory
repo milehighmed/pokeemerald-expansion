@@ -1,0 +1,26 @@
+mapscripts WattJunctionGymStairwell3_MapScripts {}
+script WJQuestion3{
+    lockall
+    showmonpic(SPECIES_ROTOM, 10,3)
+    msgbox(format("Question 3: Rotom can possess electronics, allowing it to change forms. Which of the following machines does Rotom inhabit in order to become a Water type?"))
+    waitmessage
+    hidemonpic
+    releaseall
+    end
+}
+
+script WJWashingMCHN{
+    lockall
+    msgbox(format("WASHING MACHINE"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJDishwasher{
+    lockall
+    msgbox(format("DISHWASHER"))
+    waitmessage
+    releaseall
+    end
+}

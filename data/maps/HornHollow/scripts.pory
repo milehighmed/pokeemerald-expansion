@@ -1,0 +1,31 @@
+mapscripts HornHollow_MapScripts {}
+
+script HornSign{
+    lockall
+    msgbox(format("Horn Hollow: Our Nature is to Nurture!"))
+    releaseall
+    end
+}
+
+script MyraSign{
+    lockall
+    msgbox(format("Myra's House"))
+    releaseall
+    end
+}
+
+script BlockMyra{
+    lockall
+    faceplayer
+    msgbox(format("Hey there, you look like a trainer! Myra isn't home right now, she's looking for a Poochyena that got loose from the farmhouse on Route 25. If you don't mind lending a set of eyes, it might go faster!"))
+    releaseall
+    end
+}
+
+script MyraPooch{
+    lockall
+    faceplayer
+    msgbox(format("Grrr....Pooch! Poochyena!"))
+    releaseall
+    end
+}

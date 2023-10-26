@@ -1,0 +1,21 @@
+mapscripts BricksNiceHouse_MapScripts {}
+
+script NiceMan{
+   
+    lockall
+    faceplayer
+     msgbox(format("I'm an old man, I've outlived all of my friends and family. It can be a lonely, stale life, so I moved here once I saw how low the prices were for houses and land. My new surroundings have given me a fresh perspective; I love the flowers and the air here compared to the inner cities! Here, this was my son's. I've been holding onto it to remember him by, but I don't need it anymore. I remember them all just by feeling the sun on my face!"))
+    if(!(flag(FLAG_UNUSED_0x283))){
+    waitmessage
+    giveitem (ITEM_EXP_SHARE, 1)
+    setflag (FLAG_UNUSED_0x283)
+    
+}
+else{
+   msgbox(format("May his strength find a home in you as well, now. Good luck, trainer!"))
+waitmessage
+releaseall
+end
+
+}
+}

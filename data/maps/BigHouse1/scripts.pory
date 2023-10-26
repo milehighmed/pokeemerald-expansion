@@ -1,0 +1,19 @@
+mapscripts BigHouse1_MapScripts {}
+
+script WJSchoolkid{
+    lockall
+    faceplayer
+    msgbox(format("Have you challenged the Leader yet? He's tough!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJMom{
+    lockall
+    faceplayer
+    msgbox(format("More than anything, I want my son to study hard. But all he seems to be interested in is Pokémon!"))
+    waitmessage
+    releaseall
+    end
+}

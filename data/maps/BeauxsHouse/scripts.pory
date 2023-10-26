@@ -1,0 +1,22 @@
+mapscripts BeauxsHouse_MapScripts {}
+
+script LeaderBeaux{
+    lockall
+    faceplayer
+    msgbox(format("Alright, trainer. You have my attention. What is it that you came looking for me for in Sunbeam Forest?\p...\p...\p...\p I see. Leader Ross and the Mayor sent you on their behalf. I hope that you're a more talented negotiator than they were. Regardless, something that all Lush Valley citizens hold in high regard is the virtue of battle. Before I hear you out, I first need to see if you're even worth listening to!"))
+ if(!(flag(FLAG_WONDER_CARD_UNUSED_1))){
+trainerbattle_single(TRAINER_JAMES_5, "Let's see why Celebi chose you!", "Very impressive.", PostBeaux)
+ }
+else{
+ msgbox(format("My responsibility isn't to myself or to my pride, it's to the people of Lush Valley. Not just Verdeville. I'll meet with the other leaders again. Just let the Mayor know when you've got Horn Hollow's leader, Myra, in a listening mood again and I'll head down to Honeyport's Town Hall."))
+    releaseall
+    end
+}
+}
+script PostBeaux{
+    msgbox(format("My responsibility isn't to myself or to my pride, it's to the people of Lush Valley. Not just Verdeville. I'll meet with the other leaders again. Just let the Mayor know when you've got Horn Hollow's leader, Myra, in a listening mood again and I'll head down to Honeyport's Town Hall. Before you go, take this. It's my favorite TM. I hope you get some use out of it."))
+    giveitem(ITEM_TM54, 1)
+    setflag(FLAG_WONDER_CARD_UNUSED_1)
+    releaseall
+    end
+}

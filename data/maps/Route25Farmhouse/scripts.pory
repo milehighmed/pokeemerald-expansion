@@ -1,0 +1,9 @@
+mapscripts Route25Farmhouse_MapScripts {}
+
+script FarmhouseBoy{
+    lockall
+    faceplayer
+    msgbox(format("The fair is coming up, and I'm afraid that none of my Tepig are going to be ready to show. I'm considering taking them into Sunbeam Forest to train them up a bit, but what if they get too lean?"))
+    releaseall
+    end
+}

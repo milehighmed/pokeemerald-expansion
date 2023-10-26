@@ -1,0 +1,49 @@
+mapscripts TheBricks_MapScripts {}
+
+script SamThug{
+    lockall
+    faceplayer
+    msgbox(format("Come back later, punk."))
+    releaseall
+    end
+}
+
+script BricksGirl{
+    lockall
+    faceplayer
+    msgbox(format("It used to be that all of the Bricks looked the same. Now there's a nice part of town. Not being part of that part of town makes me feel worse than when we were all just one bad town!"))
+    releaseall
+    end
+}
+
+script BricksKid{
+    lockall
+    faceplayer
+    msgbox(format("My brother left The Bricks so he could work for a company in Shade City! It's so far away... I hope I can go there someday too."))
+    releaseall
+    end
+}
+
+script BricksPooch{
+    lockall
+    faceplayer
+    msgbox(format("Grr...Pooch! Pooch!"))
+    releaseall
+    end
+}
+
+script BricksZig{
+    lockall
+    faceplayer
+    msgbox(format("Zig! Goon!"))
+    releaseall
+    end
+}
+
+script BricksTrainer{
+    lockall
+    faceplayer
+    msgbox(format("My Zigzagoon and I walk down from Silver City every so often to see what we can find on the ground. We make a game out of it! I use a metal detector, but she still beats me every time!"))
+    releaseall
+    end    
+}

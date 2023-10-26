@@ -1,0 +1,19 @@
+mapscripts BigHouse3_MapScripts {}
+
+script WJToddler1 {
+lockall
+faceplayer
+msgbox(format("When Daddy gets back from his job at the Power Plant, he's taking me fishing!"))
+waitmessage
+releaseall
+end
+}
+
+script WJGentleman1 {
+    lockall
+    faceplayer
+    msgbox(format("Three generations of men under one roof! Both my son and I work for Watt City Power Company."))
+    waitmessage
+    releaseall
+    end
+}

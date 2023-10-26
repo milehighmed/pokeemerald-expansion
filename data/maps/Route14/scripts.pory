@@ -1,0 +1,7 @@
+mapscripts Route14_MapScripts {}
+
+script Route14Camper{
+    trainerbattle_single(TRAINER_DREW, "Sweet seclusion!", "Two's a company!")
+    releaseall
+    end
+}

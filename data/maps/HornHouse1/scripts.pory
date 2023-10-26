@@ -1,0 +1,9 @@
+mapscripts HornHouse1_MapScripts {}
+
+script HornGirl{
+    lockall
+    faceplayer
+    msgbox(format("On the other side of Lush Valley, in Sunbeam Forest, I once saw two horned bug Pokémon fighting! I wonder what attracts such strong Pokémon to that area?"))
+    releaseall
+    end
+}

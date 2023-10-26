@@ -1,0 +1,45 @@
+mapscripts WattJunctionPowerPlant_MapScripts {}
+
+script PowerPlantGuard {
+    lockall
+    faceplayer
+    msgbox(format("I check PassIDs."))
+    releaseall
+    end
+}
+
+script PowerPlant_BlockPath{
+    lockall
+    faceplayer
+    goto_if_set (FLAG_BADGE02_GET, PowerPlant_Stop )
+    msgbox(format("STOP! You haven't been authorized by Leader Niko to enter the Power Plant."))
+    applymovement(OBJ_EVENT_ID_PLAYER, Route13_GoBack)
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlant_Stop {
+    msgbox(format("Hold on. I need to check your PassID...\n...\p...\p...\pAlright, go ahead."))
+    setvar(VAR_UNUSED_0x40FC, 0)
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantItem {
+    lockall
+    giveitem(ITEM_MAGNET,1)
+    removeobject(1)
+    setflag(FLAG_UNUSED_0x268)
+    waitmessage
+    releaseall
+    end
+}
+
+script PowerPlantSNS {
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, "Hey! I know you!\n From the cave!", "Please don't go\n in there!")
+    releaseall
+    end
+}   
+

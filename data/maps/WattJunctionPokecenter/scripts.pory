@@ -1,0 +1,27 @@
+mapscripts WattJunctionPokecenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: WattJunctionPokecenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script WattJunctionPokecenter_OnTransition {
+    setrespawn(HEAL_LOCATION_WATT_JUNCTION)
+    end
+} 
+
+script Nurse_WattJunction{
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script WJ_PokecenterGirl{
+    lockall
+    faceplayer
+    msgbox(format("Not from around here? What do you think about the hustle and bustle of Watt Junction?? Pretty shocking right! Would you believe me if I told you that Silver City is even bigger than Watt Junction?"))
+    waitmessage
+    releaseall
+    end
+}

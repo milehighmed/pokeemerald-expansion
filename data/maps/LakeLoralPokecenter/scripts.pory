@@ -1,0 +1,34 @@
+mapscripts LakeLoralPokecenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: LakeLoralPokecenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script LakeLoralPokecenter_OnTransition {
+    setrespawn(HEAL_LOCATION_LAKE_LORAL)
+    end
+} 
+
+script Nurse_LakeLoral{
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script Loral_PokecenterMan{
+    lockall
+    faceplayer
+    msgbox(format("I'm a voracious swimmer. Don't believe me? Two words. Natural. Buoyancy."))
+    releaseall
+    end
+}
+
+script Loral_PokecenterBoy{
+    lockall
+    faceplayer
+    msgbox(format("I'm so glad there's air conditioning in here!"))
+    releaseall
+    end
+}

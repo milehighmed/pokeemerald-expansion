@@ -1,0 +1,28 @@
+mapscripts OfficeBuilding1SecondFloor_MapScripts {}
+
+script WJTeacher{
+    lockall
+    faceplayer
+    msgbox(format("I used to teach at a big university. Working with little kids is harder, but their innocence is refreshing!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJStudent1{
+    lockall
+    faceplayer
+    msgbox(format("Today I learned that some Pokémon only come out at night!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script WJStudent2{
+    lockall
+    faceplayer
+    msgbox(format("If I was a Pokémon, I wonder which one I'd be?"))
+    waitmessage
+    releaseall
+    end
+}

@@ -3281,23 +3281,35 @@ static const u8 sTM50Desc[] = _(
     "attack, but sharply\n"
     "lowers Sp. Atk.");
 
-static const u8 sTM51Desc[] = _( // Todo
-    "?????");
+static const u8 sTM51Desc[] = _( 
+    "The user attacks\n" 
+    "then switches with\n"
+    "a party Pokémon.");
 
-static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+static const u8 sTM52Desc[] = _(
+    "The user strikes,\n"
+    "sapping the foe's\n"
+    "strength.");
 
-static const u8 sTM53Desc[] = _( // Todo
-    "?????");
+static const u8 sTM53Desc[] = _( 
+    "The user strikes\n"
+    "the foe in the\n"
+    "blink of an eye.");
 
 static const u8 sTM54Desc[] = _( // Todo
-    "?????");
+    "The user attacks\n" 
+    "then switches with\n"
+    "a party Pokémon.");
 
 static const u8 sTM55Desc[] = _( // Todo
-    "?????");
+    "An attack that\n" 
+    "doubles in power\n"
+    "without a held item.");
 
 static const u8 sTM56Desc[] = _( // Todo
-    "?????");
+    "The user attacks\n" 
+    "then switches with\n"
+    "a party Pokémon.");
 
 static const u8 sTM57Desc[] = _( // Todo
     "?????");
@@ -3495,7 +3507,7 @@ static const u8 sExpCharmDesc[] = _(
 // Form-changing Key Items
 static const u8 sRotomCatalogDesc[] = _(
     "A catalog full of\n"
-    "deviced liked by\n"
+    "devices liked by\n"
     "Rotom.");
 
 static const u8 sGracideaDesc[] = _(
